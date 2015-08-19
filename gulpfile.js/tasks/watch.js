@@ -11,7 +11,7 @@ var watch     = require('gulp-watch');
 gulp.task('watch', ['browserSync'], function() {
   watch(images.src, function() { gulp.start('images'); });
   // watch(sass.src, function() { gulp.start('sass'); });
-  watch(less.src, function() { gulp.start('less'); });
+  watch(less.watch, function() { gulp.start('less'); });
   watch(iconFont.src, function() { gulp.start('iconFont'); });
   watch(svgSprite.src, function() { gulp.start('svg-sprite'); });
   watch(fonts.src, function() { gulp.start('fonts'); });
