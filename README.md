@@ -1,7 +1,16 @@
-gulp-starter
-============
-## Features
-- Compile SASS (libsass)
+# Theme
+
+The idea of this project is create a base theme that can be customized and used in any open source project.
+
+To use gulp, we got the [gulp starter](https://github.com/greypants/gulp-starter/tree/2.0) amazing project from [Dan Tello](https://github.com/greypants), and switched from sass to less.
+
+## Using
+
+## Developing
+
+### Features
+
+- Compile SASS (less)
   - Autoprefix
   - Minify
 - Compile JS with [Webpack](http://webpack.github.io/)
@@ -23,7 +32,7 @@ gulp-starter
 - Travis CI integration
 - Local production sever for testing
 
-## Revisions from 1.0
+### Revisions from 1.0
 - Full asset pipeline and static html compilation
 - New directory structure
 - Replaced Browserify with [Webpack](http://webpack.github.io/docs/webpack-for-browserify-users.html)!
@@ -42,7 +51,9 @@ gulp-starter
 - Add SVG sprite implementation from @synapticism in #100
 
 ## Live Demo
+
 http://greypants.github.io/gulp-starter/
+
 Result of running `gulp deploy`
 
 ## Install dependencies
