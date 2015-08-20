@@ -1,4 +1,5 @@
 var config = require('./')
+var path = require('path')
 
 module.exports = {
   autoprefixer: { browsers: ['last 2 version'] },
@@ -6,6 +7,7 @@ module.exports = {
   watch: config.sourceAssets + "/stylesheets/**/*.less",
   dest: config.publicAssets + '/stylesheets',
   settings: {
-    plugins: []
+    plugins: [],
+    paths: ["bower_components/bootstrap/less"]
   }
 }

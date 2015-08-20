@@ -1,0 +1,29 @@
+{
+  "name": "railsblocks-theme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/railsblocks/railsblocks-theme",
+  "authors": [
+    "Celso Fernandes <fernandes@zertico.com>"
+  ],
+  "description": "theme for railsblocks",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "rails",
+    "blocks",
+    "theme",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
