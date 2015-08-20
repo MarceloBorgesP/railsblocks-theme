@@ -1,20 +1,443 @@
-{#
-  Nunjucks!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
-
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <img src="images/gulp.png" alt="gulp.js">
-  <h4>Ubiquitous Social Icons!</h4>
-  {% include "parts/social-icons-font.html" %}
-  {% include "parts/social-icons-svg.html" %}
-  <button id="button">Manually Load Async Module</button>
-  <p data-module="Highlight">An auto-loaded async module highlighted this!</p>
+<div class='row border-bottom'>
+	<nav class='navbar grey-bg tops' role='navigation' style='margin-bottom: 0'>
+		<!--
+		<a class='navbar-minimalize minimalize-styl-2 btn btn-primary' href='#'>
+	    <i class='fa fa-bars'></i>
+	  </a>
+	  <ul class='nav navbar-top-links navbar-left'>
+	    <li class='dropdown'>
+	      <a class='dropdown-toggle count-info' data-toggle='dropdown' href='#'>
+	        <i class='fa fa-envelope'></i>
+	        <span class='label label-success'>16</span>
+	      </a>
+	      <ul class='dropdown-menu dropdown-messages'>
+	        <li>
+	          <div class='dropdown-messages-box'>
+	            <a class='pull-left' href='profile.html'>
+	              <img alt='image' class='img-circle' src='/assets/inspinia/a7.jpg'>
+	            </a>
+	            <div class='media-body'>
+	              <small class='pull-right'>46h ago</small>
+	              <strong>Mike Loreipsum</strong>
+	              started following
+	              <strong>Monica Smith</strong>.
+	              <br>
+	                <small class='text-muted'>3 days ago at 7:58 pm - 10.06.2014</small>
+	              </br>
+	            </div>
+	          </div>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <div class='dropdown-messages-box'>
+	            <a class='pull-left' href='profile.html'>
+	              <img alt='image' class='img-circle' src='/assets/inspinia/a4.jpg'>
+	            </a>
+	            <div class='media-body'>
+	              <small class='pull-right text-navy'>5h ago</small>
+	              <strong>Chris Johnatan Overtunk</strong>
+	              started following
+	              <strong>Monica Smith</strong>.
+	              <br>
+	                <small class='text-muted'>Yesterday 1:21 pm - 11.06.2014</small>
+	              </br>
+	            </div>
+	          </div>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <div class='dropdown-messages-box'>
+	            <a class='pull-left' href='profile.html'>
+	              <img alt='image' class='img-circle' src='/assets/inspinia/profile.jpg'>
+	            </a>
+	            <div class='media-body'>
+	              <small class='pull-right'>23h ago</small>
+	              <strong>Monica Smith</strong>
+	              love
+	              <strong>Kim Smith</strong>.
+	              <br>
+	                <small class='text-muted'>2 days ago at 2:30 am - 11.06.2014</small>
+	              </br>
+	            </div>
+	          </div>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <div class='text-center link-block'>
+	            <a href='mailbox.html'>
+	              <i class='fa fa-envelope'></i>
+	              <strong>Read All Messages</strong>
+	            </a>
+	          </div>
+	        </li>
+	      </ul>
+	    </li>
+	    <li class='dropdown'>
+	      <a class='dropdown-toggle count-info' data-toggle='dropdown' href='#'>
+	        <i class='fa fa-bell'></i>
+	        <span class='label label-info'>8</span>
+	      </a>
+	      <ul class='dropdown-menu dropdown-alerts'>
+	        <li>
+	          <a href='mailbox.html'>
+	            <div>
+	              <i class='fa fa-envelope fa-fw'></i>
+	              You have 16 messages
+	              <span class='pull-right text-muted small'>4 minutes ago</span>
+	            </div>
+	          </a>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <a href='profile.html'>
+	            <div>
+	              <i class='fa fa-twitter fa-fw'></i>
+	              3 New Followers
+	              <span class='pull-right text-muted small'>12 minutes ago</span>
+	            </div>
+	          </a>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <a href='grid_options.html'>
+	            <div>
+	              <i class='fa fa-upload fa-fw'></i>
+	              Server Rebooted
+	              <span class='pull-right text-muted small'>4 minutes ago</span>
+	            </div>
+	          </a>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <div class='text-center link-block'>
+	            <a href='notifications.html'>
+	              <strong>See All Alerts</strong>
+	              <i class='fa fa-angle-right'></i>
+	            </a>
+	          </div>
+	        </li>
+	      </ul>
+	    </li>
+	  </ul>
+	  !-->
+	  <ul class='nav navbar-top-links navbar-right profiles'>
+	    <li class='dropdown profile-element'>
+	      <a class='asd dropdown-toggle' data-toggle='dropdown' href='#'>
+	        <img alt='image' class='img-circle' src='https://randomuser.me/api/portraits/med/women/10.jpg'>
+	        <span class='m-t-xs'>
+	          <strong class='font-bold'>David Williams</strong>
+	          <b class='caret'></b>
+	        </span>
+	      </a>
+	      <ul class='dropdown-menu animated fadeInRight m-t-xs'>
+	        <li>
+	          <a href='profile.html'>Profile</a>
+	        </li>
+	        <li>
+	          <a href='contacts.html'>Contacts</a>
+	        </li>
+	        <li>
+	          <a href='mailbox.html'>Mailbox</a>
+	        </li>
+	        <li class='divider'></li>
+	        <li>
+	          <a href='login.html'>
+	            <i class='fa fa-sign-out'></i>
+	            Log out
+	          </a>
+	        </li>
+	      </ul>
+	    </li>
+	  </ul>
+	  <ul class='nav navbar-top-links navbar-right hidden-xs'>
+	    <a class='btn btn-primary btn-xs btn-navbar' href='/reseller/logout'>Log Out</a>
+	  </ul>
+	</nav>
+</div>
+<div class='box_notice'>
+</div>
+<div class='row wrapper border-bottom white-bg page-heading'>
+  <div class='col-lg-10'>
+    <h2>Listing Invoices</h2>
+    <ol class='breadcrumb'>
+      <li>
+        <a href='/'>Home</a>
+      </li>
+      <li>
+        <a>Invoices</a>
+      </li>
+      <li class='active'>
+        <strong>Listing Invoices</strong>
+      </li>
+    </ol>
+  </div>
+  <div class='col-lg-2'></div>
+</div>
+<div class='wrapper wrapper-content'>
+  <div class='row'>
+    <div class='col-lg-12'>
+      <div class='ibox float-e-margins'>
+        <div class='ibox-title'>
+          <div class='col-lg-8'>
+            <!-- %h3= I18n.t("pages.mocks.reseller.invoice.index.title") -->
+            <h3>
+              Listing all invoices
+            </h3>
+          </div>
+          <div class='col-lg-4 text-right'>
+            <a href='#' id='search'>
+              Buscar
+              <i class='icon-search'></i>
+            </a>
+          </div>
+          <div class='clearfix'></div>
+          <div class='hidden panel panel-default' id='search_box'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'>
+                Buscar
+              </h3>
+            </div>
+            <div class='panel-body'>
+              <form accept-charset='UTF-8' action='#' class='Yesple_form new_q' id='new_q' method='get'>
+                <div class='form-group'>
+                  <div class='col-md-3'>
+                    <label class='string required control-label' for='date'>
+                      Cliente
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <div class='col-md-3'>
+                    <label class='string required control-label' for='date'>
+                      ID da Fatura
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <div class='col-md-3'>
+                    <label class='string required control-label' for='date'>
+                      Data Inicial
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                  <div class='col-md-3'>
+                    <label class='string required control-label' for='date'>
+                      Data Final
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                </div>
+                <div class='clearfix'></div>
+                <hr>
+                <div class='form-group hidden' id='more_options_fields'>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Valor Inicial
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Valor Final
+                    </label>
+                    <input class='string required form-control' id='q_name_cont' name='q[name_cont]' type='text'>
+                  </div>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Ativo
+                    </label>
+                    <div class='bootstrap-switch-square'>
+                      <input data-toggle='switch' id='switch-01' name='square-switch' type='checkbox'>
+                    </div>
+                  </div>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Recorrente
+                    </label>
+                    <div class='bootstrap-switch-square'>
+                      <input data-toggle='switch' id='switch-02' name='square-switch' type='checkbox'>
+                    </div>
+                  </div>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Pago
+                    </label>
+                    <div class='bootstrap-switch-square'>
+                      <input data-toggle='switch' id='switch-03' name='square-switch' type='checkbox'>
+                    </div>
+                  </div>
+                  <div class='col-md-2'>
+                    <label class='string required control-label' for='date'>
+                      Pré-pago
+                    </label>
+                    <div class='bootstrap-switch-square'>
+                      <input data-toggle='switch' id='switch-04' name='square-switch' type='checkbox'>
+                    </div>
+                  </div>
+                  <div class='clearfix'></div>
+                </div>
+              </form>
+              <div class='col-md-3'>
+                <input class='btn btn-default' name='commit' type='submit' value='Buscar Faturas'>
+                <button class='btn btn-link' id='more_options_search'>Mais Opções</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='ibox-content'>
+          <div class='table-responsive'>
+            <table class='table table-striped'>
+              <thead>
+                <tr>
+                  <th>ID da Fatura</th>
+                  <th>Cliente</th>
+                  <th>Data de Vencimento</th>
+                  <th>Criado em</th>
+                  <th>Recorrente</th>
+                  <th>Status</th>
+                  <th>Valor</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>17</a>
+                  </td>
+                  <td>Cliente 1</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Sim</td>
+                  <td>
+                    <span class='btn btn-xs btn-primary status-btn'>
+                      Pago
+                    </span>
+                  </td>
+                  <td>$300.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>21</a>
+                  </td>
+                  <td>Cliente 2</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Sim</td>
+                  <td>
+                    <span class='btn btn-xs btn-info status-btn'>
+                      Aberto
+                    </span>
+                  </td>
+                  <td>$140.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>27</a>
+                  </td>
+                  <td>Cliente 3</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Não</td>
+                  <td>
+                    <span class='btn btn-xs btn-danger status-btn'>
+                      Atrasado
+                    </span>
+                  </td>
+                  <td>$3230.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>32</a>
+                  </td>
+                  <td>Cliente 4</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Sim</td>
+                  <td>
+                    <span class='btn btn-xs btn-primary status-btn'>
+                      Pago
+                    </span>
+                  </td>
+                  <td>$1340.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>37</a>
+                  </td>
+                  <td>Cliente 5</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Não</td>
+                  <td>
+                    <span class='btn btn-xs btn-primary status-btn'>
+                      Pago
+                    </span>
+                  </td>
+                  <td>$89.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href='/br/mocks/user/invoice/show'>38</a>
+                  </td>
+                  <td>Cliente 6</td>
+                  <td>01/01/2015</td>
+                  <td>30/12/2014</td>
+                  <td>Sim</td>
+                  <td>
+                    <span class='btn btn-xs btn-danger status-btn'>
+                      Atrasado
+                    </span>
+                  </td>
+                  <td>$120.00</td>
+                  <td>
+                    <a href='/br/mocks/reseller/invoice/show' style='margin-right: 15px;'>Visualizar</a>
+                    <a href='/br/mocks/reseller/invoice/edit'>Editar</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='footer fixed'>
+  <div class='pull-right'>
+    <span class='text-muted' style='margin-right: 20px;'>Dúvidas</span>
+    <span class='text-muted' style='margin-right: 20px;'>Feedback</span>
+    <span class='text-muted'>Contato</span>
+  </div>
+  <div>
+  	<span class='text-muted'>Copyright © 2015 Zertico</span>
+  </div>
+</div>
 {% endblock %}
 
 {% block javascript %}
-<script src="javascripts/page1.js"></script>
 {% endblock %}
