@@ -8,6 +8,7 @@ module.exports = {
   dest: config.publicAssets + '/stylesheets',
   settings: {
     plugins: [],
-    paths: ["bower_components/bootstrap/less"]
+    paths: ["bower_components/bootstrap/less", 
+    "bower_components/fontawesome/less"]
   }
 }
