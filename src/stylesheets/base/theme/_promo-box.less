@@ -1,9 +1,37 @@
 .promo_box {
     padding: 40px 0;
-    background-color: @dark-gray;
+    color: @inverse;
+    background-color: @dark-bg;
+    .container {
+    	position: relative;
+    }
 }
 
 .promo_button {
-    right: 15px;
+	top: 50%;
+    right: 30px;
     position: absolute;
+    background-color: darken(@dark-bg, 20%);
+    border-radius: 3px;
+    font-size: 18px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @inverse;
+    &:hover {
+	    text-decoration: none;
+	    color: @inverse;
+	    cursor: pointer;
+    }
+    &:focus {
+	    text-decoration: none;
+	    color: @inverse;
+	    cursor: pointer;
+    }
+}
+
+.promo_button:hover, .promo_button:focus, {
+
 }

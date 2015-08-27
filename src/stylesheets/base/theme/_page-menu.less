@@ -1,10 +1,16 @@
 #page-menu {
-    background-color: #BEBEBE;
+    background-color: @dark-bg;
+    height: 44px;
+    line-height: 44px;
 }
 
 .menu_page_title {
     color: #fff;
     float: left;
+    span {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
 #page-menu nav {
@@ -16,16 +22,15 @@
     color: #fff;
     display: block;
     font-size: 14px;
-    height: 44px;
     line-height: 44px;
     padding: 0 17px;
+    &:hover {
+        text-decoration: none;
+        background-color: darken(@dark-bg, 20%);
+    }
 }
 
 #page-menu nav ul {
     display: inline-flex;
     list-style: none;
-}
-#page-menu nav {
-    float: right;
-    position: relative;
 }
