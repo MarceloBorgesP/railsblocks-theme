@@ -1,25 +1,28 @@
-.center, .box_category, .box_plan, .box_category, .box_plan {
-    text-align: center !important;
+.center, .box_category, .box_plan {
+    text-align: center;
 }
 
-.box_icon, .box_plan .box_icon_plan, .box_plan, .box_plan .box_icon_plan {
-    border: 1px solid #e5e5e5;
+.box_icon, .box_plan, .box_icon_plan {
+    border: 1px solid @border-color;
 }
 
-.box_desc,  {
-    border-color: -moz-use-text-color #e5e5e5 #e5e5e5;
+.box_desc {
+    border: 1px solid @border-color;
     border-radius: 0 0 5px 5px;
-    border-style: none solid solid;
     border-width: 0 1px 1px;
     padding: 25px;
 }
 
 .box_desc h3 {
     font-size: 16px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+}
+
+.box_desc > h3 > span {
+   margin-top: 8px;
+   display: block;
 }
 
 .box_icon i {
     font-size: 130px;
+    margin: 40px;
 }

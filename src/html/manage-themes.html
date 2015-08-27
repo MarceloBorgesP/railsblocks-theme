@@ -1,56 +1,50 @@
-{% extends 'layouts/application.html' %}
-
-{% block content %}
-
+{% extends 'layouts/application.html' %} {% block content %}
 <section>
-  <div class='row'>
-    <div class='col-lg-10'>
-      <h2>Listing Invoices</h2>
-      <ol class='breadcrumb'>
-        <li>
-          <a href='/'>Home</a>
-        </li>
-        <li>
-          <a>Invoices</a>
-        </li>
-        <li class='active'>
-          <strong>Cancel Invoice</strong>
-        </li>
-      </ol>
+    <div class='row'>
+        <div class='col-lg-10'>
+            <h2>Listing Invoices</h2>
+            <ol class='breadcrumb'>
+                <li>
+                    <a href='/'>Home</a>
+                </li>
+                <li>
+                    <a>Invoices</a>
+                </li>
+                <li class='active'>
+                    <strong>Cancel Invoice</strong>
+                </li>
+            </ol>
+        </div>
+        <div class='col-lg-2'></div>
     </div>
-    <div class='col-lg-2'></div>
-  </div>
-  <div>
-    <form class="form-group">
-      <h2>Managing Themes</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Theme</th>
-            <th>Using</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Theme 1</td>
-            <td><input type="radio" name="theme"></td>
-          </tr>
-          <tr>
-            <td>Theme 2</td>
-            <td><input type="radio" name="theme" checked="checked"></td>
-          </tr>
-          <tr class="info">
-            <td>Theme 3</td>
-            <td><input type="radio" name="theme" checked="checked"></td>
-          </tr>
-        </tbody>
-      </table>
-      <input class="btn btn-primary" type="submit" value="Save Changes">
-    </form>
-  </div>
+    <div class="form-inline col-lg-10">
+        <form>
+            <h3>Managing Themes</h3>
+            <div class="form-group">
+                <span>Tema atual:</span>
+                <span>Blue</span>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-9 control-label">Novo tema:</label>
+                <div class="col-sm-3">
+                    <select class="form-control">
+                        <option>Blue</option>
+                        <option>Yellow</option>
+                        <option>Black</option>
+                        <option>Clean</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <input class="btn btn-default" type="submit" value="Save Changes">
+                </div>
+            </div>
+        </form>
+    </div>
 </section>
-
-{% endblock %}
-
-{% block javascript %}
-{% endblock %}
+{% endblock %} {% block javascript %} {% endblock %}
