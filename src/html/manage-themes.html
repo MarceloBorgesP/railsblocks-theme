@@ -1,0 +1,56 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+
+<section>
+  <div class='row'>
+    <div class='col-lg-10'>
+      <h2>Listing Invoices</h2>
+      <ol class='breadcrumb'>
+        <li>
+          <a href='/'>Home</a>
+        </li>
+        <li>
+          <a>Invoices</a>
+        </li>
+        <li class='active'>
+          <strong>Cancel Invoice</strong>
+        </li>
+      </ol>
+    </div>
+    <div class='col-lg-2'></div>
+  </div>
+  <div>
+    <form class="form-group">
+      <h2>Managing Themes</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Theme</th>
+            <th>Using</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Theme 1</td>
+            <td><input type="radio" name="theme"></td>
+          </tr>
+          <tr>
+            <td>Theme 2</td>
+            <td><input type="radio" name="theme" checked="checked"></td>
+          </tr>
+          <tr class="info">
+            <td>Theme 3</td>
+            <td><input type="radio" name="theme" checked="checked"></td>
+          </tr>
+        </tbody>
+      </table>
+      <input class="btn btn-primary" type="submit" value="Save Changes">
+    </form>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

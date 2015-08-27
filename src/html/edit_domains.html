@@ -1,0 +1,135 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+
+<section>
+  <div class='row'>
+    <div class='col-lg-10'>
+      <h2>Listing Invoices</h2>
+      <ol class='breadcrumb'>
+        <li>
+          <a href='/'>Home</a>
+        </li>
+        <li>
+          <a>Invoices</a>
+        </li>
+        <li class='active'>
+          <strong>Cancel Invoice</strong>
+        </li>
+      </ol>
+    </div>
+    <div class='col-lg-2'></div>
+  </div>
+  <div>
+
+  <form class="form-group">
+    <h2>Managing Domains</h2>    
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Domain</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Acao</td>
+          <td><input type="text" value="www.foo.localhost.com"></td>
+          <td colspan="2">
+            <button class="btn btn-default">Cancel</button>
+            <input class="btn btn-success" type="submit" value="Save Changes">
+          </td>
+        </tr>
+        <tr>
+          <td>Acao</td>
+          <td>www.foo.localhost.com</td>
+          <td>
+            <span>
+              <i class="fa fa-pencil"></i>
+              Edit
+            </span>
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-close"></i>
+              Delete
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Acao</td>
+          <td>www.foo.localhost.com</td>
+          <td>
+            <span>
+              <i class="fa fa-pencil"></i>
+              Edit
+            </span>
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-close"></i>
+              Delete
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Acao</td>
+          <td>www.foo.localhost.com</td>
+          <td>
+            <span>
+              <i class="fa fa-pencil"></i>
+              Edit
+            </span>
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-close"></i>
+              Delete
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Acao</td>
+          <td>www.foo.localhost.com</td>
+          <td>
+            <span>
+              <i class="fa fa-pencil"></i>
+              Edit
+            </span>
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-close"></i>
+              Delete
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Acao</td>
+          <td>www.foo.localhost.com</td>
+          <td>
+            <span>
+              <i class="fa fa-pencil"></i>
+              Edit
+            </span>
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-close"></i>
+              Delete
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <input class="btn btn-primary" type="submit" value="Save Changes">
+  </form>
+</section>
+
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
