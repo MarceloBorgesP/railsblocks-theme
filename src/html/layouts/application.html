@@ -9,15 +9,17 @@
   {% block head %}{% endblock %}
 </head>
 <body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      {% include "parts/page-nav.html" %}
+  <div id="panel">
+    <div id="wrapper">
+      <div id="sidebar-wrapper">
+        {% include "parts/page-nav.html" %}
+      </div>
+      <div id="page-content-wrapper" class="gray-bg">
+        {% block content %}{% endblock %}
+      </div>
     </div>
-    <div id="page-content-wrapper" class="gray-bg">
-      {% block content %}{% endblock %}
-    </div>
+    <script src="javascripts/shared.js"></script>
+    {% block javascript %}{% endblock %}
   </div>
-  <script src="javascripts/shared.js"></script>
-  {% block javascript %}{% endblock %}
 </body>
 </html>
