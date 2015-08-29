@@ -155,7 +155,7 @@
     <div class='col-lg-5 title'>
         <span>Servers</span>
     </div>
-    <div class="col-lg-2 pull-right">
+    <div class="col-lg-3 pull-right">
         <a class="btn btn-default btn-default" role="button"<i class="fa fa-floppy-o"></i> Save</a>
         <a class="btn btn-default btn-danger" href="#" role="button"><i class="fa fa-times"></i> Delete Category</a>
     </div>
@@ -180,9 +180,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3 border-bottom mt_20">
+        <div class="col-sm-3 mt_20">
           <input type="checkbox" />
-          <strong>Enabled</strong>
+          <strong class="ml_10">Enabled</strong>
+          <hr>
         </div>
       </div>
       <div class="comp-s-item border-bottom clearfix">
@@ -190,24 +191,18 @@
                 <h4>Name</h4>
                 <small>Consectetur adipiscing. Lorem ipsum dolor sit amet elit. <a href="#" title="">Aenean ac magna.</a></small>
             </div>
-
             <div class="col-lg-8 summary">
-                <div>
+                <div class="clearfix">
+                    <div class="col-lg-4">
+                        <strong>Current name</strong>
+                    </div>
                     <div class="pull-right">
                         <button class="btn btn-default btn-inverse">New</button>
                     </div>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Current name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Servers</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+                <hr>
+                <div class="col-lg-12">
+                    <span>Servers</span>
                 </div>
             </div>
         </div>
@@ -225,12 +220,15 @@
                     <div class="col-sm-7">
                         <i class="fa fa-cloud"></i>
                     </div>
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-inverse">Save</button>
+                    </div>
                 </div>
                 <hr>
                 <div class="form-group">
                       <form class="simple_form form-horizontal form-group string required">
                         <label class="col-sm-1 string required control-label">
-                          Icon
+                          New
                         </label>
                         <div class="col-sm-11">
                           <input id="name" class="string required form-control" type="text">
@@ -247,12 +245,19 @@
             </div>
 
             <div class="col-lg-8 summary">
-                <div>
-                    <h5>New Description</h5>
+                <div class="clearfix">
+                    <div class="col-sm-3">
+                        <span>New description:</span>
+                    </div>
                     <div class="pull-right">
                         <button class="btn btn-default btn-inverse">Save</button>
                     </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <form class="simple_form form-horizontal form-group string required">
                     <textarea style="width: 100%" placeholder="Consectetur adipiscing. Lorem ipsum dolor sit amet elit. "></textarea>
+                  </form>
                 </div>
             </div>
         </div>
