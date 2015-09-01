@@ -17,12 +17,18 @@
 @red: 						#ED5565;    // Danger color
 
 // Various colors
-@text-color: 				#676a6c;   	// Body text
-@gray: 						#f3f3f4;    // Background wrapper color
+@light-text-color: 			#76757F;
+@text-color: 				#3F3F44;   	// Body text
+@text-color-inverse: 		#CCCCCC;   	// Body text
+@gray-bg: 					#F8F8F8;    // Background wrapper color
+@dark-gray-bg: 				#555555;
 @light-gray: 				#F3F3F4;   	// Default label, badget
 @label-badget-color: 		#5E5E5E;
 @light-blue:				#f3f6fb;
 @inverse:                   white;
+
+@footer-bg:					#333;
+@footer-bg-dark:			darken(@footer-bg, 10%);
 
 // Spiner color and margin
 @spin-color: 				@navy;
@@ -46,6 +52,21 @@
 
 //Navbar links color
 @nav-links-gray: 			#838687;
+
+//Fonts
+@font-xs: 10px;
+@font-sm: 14px;
+@font-md: 20px;
+@font-lg: 28px;
+@font-xl: 40px;
+@font-xxl: 60px;
+
+//Sizes
+@n: 0;
+@x: 10px;
+@s: 20px;
+@m: 40px;
+@l: 60px;
 
 //== Scaffolding
 //
@@ -73,15 +94,6 @@
 @headings-font-weight:      700;
 @headings-line-height:      1.1;
 @headings-color:            inherit;
-
-
-//== Iconography
-//
-//## Specify custom locations of the include Glyphicons icon font.
-
-@icon-font-path:            "/assets/zertico/flat/glyphicons/";
-@icon-font-name:            "flat-ui-pro-icons-regular";
-@icon-font-svg-id:          "flat-ui-pro-icons-regular";
 
 //** Icon sizes for use in components
 @icon-normal:               16px;
