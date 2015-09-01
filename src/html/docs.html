@@ -1,0 +1,262 @@
+{#
+  Nunjucks!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/documentation.html' %}
+
+{% block content %}
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Base Theme Documentation</a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Base Theme</h2>
+                <p>This is the documentation for the Railblocks Base Theme, located at <a href="https://github.com/railsblocks/railsblocks-theme">https://github.com/railsblocks/railsblocks-theme</a></p>
+                <small>
+                    <strong>Documentation created:</strong> 20/08/2015<br/>
+                    <strong>Latest update:</strong> 20/08/2015<br/>
+                    <strong>By:</strong> Zertico Team<br/>
+                    <strong>Theme Version:</strong> 0.01<br/>
+                </small>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+            Table of Contents
+        </h2>
+        <ul>
+            <li><a href="#documentation">About documentation</a></li>
+            <li><a href="#folder_structure">Folder structure</a></li>
+            <li><a href="#admin_layout_structure">Company layout</a></li>
+            <li><a href="#store_layout_structure">Store layout</a></li>
+            <li><a href="#less_structure">LESS structure</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+    <a name="documentation" class="anchor"></a>
+    <h3>About the template</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="row">
+        <a name="folder_structure" class="anchor"></a>
+        <div class="col-md-12">
+            <h3>Structure</h3>
+            <h4>Folders and files</h4>
+        <div>
+            <pre class="prettyprint linenums">
+<code>railsblocks_theme/
+    ├── <strong>fonts/</strong>
+    ├── <strong>html/</strong>
+        ├── <strong>layouts/</strong>
+            ├── admin.html
+            ├── shop.html
+            ├── documentation.html
+        ├── <strong>macros/</strong>
+            ├── helpers.html
+        ├── <strong>parts/</strong>
+            ├── pag-nav.html
+            ├── social-icons-font.html
+            ├── social-icons-svg.html
+        ├── index.html
+        ├── page1.html
+        ├── page2.html
+    ├── <strong>icons/</strong>
+    ├── <strong>images/</strong>
+    ├── <strong>javascripts/</strong>
+    ├── <strong>sprites/</strong>
+    ├── <strong>stylesheets/</strong>
+        ├── <strong>base/</strong>
+            ├──<strong>dash/</strong>
+                ├──_general.less
+                ├──_mixins.less
+                ├──_variables.less
+            ├──<strong>shop/</strong> 
+                ├── ... 
+        ├── global.less
+</code>
+            </pre>
+        </div>
+
+    </div>
+    <hr>
+    <div class="col-md-12">
+        <h2>Admin Context Theme</h2>
+        <div class="col-md-6">
+            <h3>Main HTML elements</h3>
+
+            <p>Theme files have almost unchanging structure consisting of:</p>
+            <ol>
+                <li><code>#wrapper</code> main container of body elements.</li>
+                <li><code>nav .navbar-static-side</code> left navigation <b>menu</b>.</li>
+                <li><code>#page-wrapper</code> main container for page elements.</li>
+                <li><code>nav .navbar-static-top</code> top navigation with second menu.</li>
+                <li><code>.page-heading</code> container with page title and breadcrumb</li>
+                <li><code>.wrapper-content</code> main container for html elements.</li>
+                <li><code>.footer</code> main container for footer.</li>
+            </ol>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href="images/layouts.jpg"><img class="img-responsive" src="images/layouts.jpg" alt="page structure"></a>
+        </div>
+        <a name="admin_layout_structure" class="anchor"></a>
+        <div class="col-md-12">
+            <section>
+                <h3>Layout structure</h3>
+                <p>The base theme for the admin context covers 5 main sections of the layout and also some basic CSS that aligns all together. Those 5 main sections are:</p>
+                <ul>
+                    <li>Fixed left sidebar</li>
+                    <li>Top navbar</li>
+                    <li>Page title and breadcrumb</li>
+                    <li>Main content</li>
+                    <li>Fixed footer</li>
+                </ul>
+                <div class="col-md-6">
+                    <h4>Fixed left sidebar</h4>
+                    <p>The left sidebar contains the main menu. This main menu has all the main links to the other internal system pages.</p>
+
+                    <h4>Top navbar</h4>
+                    <p>The top navbar contains some user interaction elements such as: messages, notifications and also a profile menu.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Page title and breadcrumb</h4>
+                    <p>Contains only the page title and the page breadcrumbs.</p>
+                    <h4>Main content</h4>
+                    <p>The main part of the layout, the system pages will be loaded in this section. </p>
+
+                    <h4>Fixed footer</h4>
+                    <p>The footer is always sticky to the bottom of the page. In the footer, there are a tiny menu containing links such as "Help", "Feedback" and "Contact".</p>   
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-12">
+        <h2>Store Context Theme</h2>
+        <div class="col-md-6">
+            <h3>Main HTML elements</h3>
+
+            <p>Like the Admin context, the Store context also has an unchanging structure:</p>
+            <ol>
+                <li><code>#shop</code> main container for body elements.</li>
+                <li><code>#header</code> navigation <b>menu</b>.</li>
+                <li><code>#header-wrap</code> main container for header elements.</li>
+                <li><code>#content</code> main container for page elements.</li>
+                <li><code>#page-menu</code> navigation sub-menu</li>
+                <li><code>.page_title</code> container with page title and breadcrumb</li>
+                <li><code>#page_content</code> main container for html elements.</li>
+                <li><code>.big-footer</code> main container for footer.</li>
+            </ol>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href="images/layouts.jpg"><img class="img-responsive" src="images/layouts.jpg" alt="page structure"></a>
+        </div>
+        <a name="store_layout_structure" class="anchor"></a>
+        <div class="col-md-12">
+            <section>
+                <h3>Layout structure</h3>
+                <p>The base theme for the store context covers 5 main sections of the layout and also some basic CSS that aligns all together. Those 5 main sections are:</p>
+                <ul>
+                    <li>Fixed header</li>
+                    <li>Page menu</li>
+                    <li>Page title and breadcrumb</li>
+                    <li>Main content</li>
+                    <li>Fixed footer</li>
+                </ul>
+                <div class="col-md-6">
+                    <h4>Fixed header</h4>
+                    <p>The header contains the main menu. Here we can find the main links for navigation on the system.</p>
+
+                    <h4>Page Menu</h4>
+                    <p>The Page Menu contains links for navigation inside the Shop categories.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Page title and breadcrumb</h4>
+                    <p>Contains only the page title and the page breadcrumbs.</p>
+
+                    <h4>Main content</h4>
+                    <p>The main part of the layout, the system pages will be loaded in this section. </p>
+
+                    <h4>Fixed footer</h4>
+                    <p>The footer is always sticky to the bottom of the page. In the footer, there are many useful links, such as links for navigation and social media.</p>   
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div>
+        <div class="col-md-12">
+            <hr>
+            <section>
+                <h3>LESS structure</h3>
+                <p>The css structure should be always well organized in order to keep a clearly understanding of its elements, classes and also files.</p>
+
+                <p>All the LESS files are in the stylesheets directory and they are compiled into only one css file (public/stylesheets/global.css).</p>
+
+                <p>The file sctructure of the LESS files is:</p>
+                <pre class="prettyprint linenums">
+<code>stylesheets/
+    ├── <strong>base/</strong>
+        ├──<strong>dash/</strong>
+            ├──_general.less
+            ├──_mixins.less
+            ├──_variables.less
+        ├──<strong>shop/</strong> 
+            ├── ... 
+    ├── global.less
+</code>
+                </pre>
+                <h4>_general.less</h4>
+                <p>This file contains all the general css styling and the 5 main sections styling. </p>
+
+                <h4>_mixins.less</h4>
+                <p>This file contains all the stylesheets mixins the are used in other less files.</p>
+
+
+                <h4>_variables.less</h4>
+                <p>This file contains all the coloring styles and other variables useful to be used in the other less files.</p>
+            </section>
+            <hr>
+            <footer>
+                <p>&copy; Zertico 2015 | Railblocks Base Theme</p>
+            </footer>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% from 'macros/helpers.html' import sprite %}
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %} Zertico - Base theme {% endblock %}</title>
+  <link rel="stylesheet" href="stylesheets/global.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div id="panel">
+    <div id="wrapper">
+      <div id="sidebar-wrapper">
+        {% include "parts/page-nav.html" %}
+      </div>
+      <div id="page-content-wrapper" class="gray-bg">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    <script src="javascripts/shared.js"></script>
+    {% block javascript %}{% endblock %}
+  </div>
+</body>
+</html>

@@ -7,7 +7,7 @@ var handleErrors     = require('../../lib/handleErrors');
 gulp.task('iconFont', function() {
   return gulp.src(config.src)
     .pipe(iconfont(config.options))
+    .on('glyphs', generateIconSass)
     .on('error', handleErrors)
-    .on('codepoints', generateIconSass)
     .pipe(gulp.dest(config.dest));
 });

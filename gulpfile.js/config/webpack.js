@@ -1,24 +1,15 @@
+var path            = require('path')
 var paths           = require('./')
 var webpack         = require('webpack')
 var webpackManifest = require('../lib/webpackManifest')
 
 module.exports = function(env) {
-
-  var jsSrc = paths.sourceAssets + '/javascripts/'
+  var jsSrc = path.resolve(paths.sourceAssets + '/javascripts/')
   var jsDest = paths.publicAssets + '/javascripts/'
-  var publicPath = 'assets/javascripts/'
+  var publicPath = 'javascripts/'
 
   var webpackConfig = {
-    entry: {
-      page1: [jsSrc + 'page1.js'],
-      page2: [jsSrc + 'page2.js']
-    },
-
-    output: {
-      path: jsDest,
-      filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
-      publicPath: publicPath
-    },
+    context: jsSrc,
 
     plugins: [],
 
@@ -30,7 +21,7 @@ module.exports = function(env) {
       loaders: [
         {
           test: /\.js$/,
-          loader: 'babel-loader?experimental',
+          loader: 'babel-loader?stage=1',
           exclude: /node_modules/
         }
       ]
@@ -38,6 +29,18 @@ module.exports = function(env) {
   }
 
   if(env !== 'test') {
+    // Karma doesn't need entry points or output settings
+    webpackConfig.entry= {
+      page1: [ './page1.js' ],
+      page2: [ './page2.js' ]
+    }
+
+    webpackConfig.output= {
+      path: jsDest,
+      filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
+      publicPath: publicPath
+    }
+
     // Factor out common dependencies into a shared.js
     webpackConfig.plugins.push(
       new webpack.optimize.CommonsChunkPlugin({
@@ -48,7 +51,7 @@ module.exports = function(env) {
   }
 
   if(env === 'development') {
-    webpackConfig.devtool = 'sourcemap'
+    webpackConfig.devtool = 'source-map'
     webpack.debug = true
   }
 
