@@ -1,0 +1,37 @@
+.promo_box {
+    padding: 40px 0;
+    color: @inverse;
+    background-color: @dark-gray-bg;
+    h3{
+        margin: 3px 0px;
+    }
+    .container {
+        position: relative;
+    }
+}
+
+.promo_button {
+    right: 30px;
+    top:0;
+    position: absolute;
+    background-color: darken(@dark-gray-bg, 20%);
+    border-radius: 3px;
+    font-size: @font-md;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @inverse;
+    &:hover {
+        text-decoration: none;
+        color: @inverse;
+        cursor: pointer;
+        background-color: darken(@dark-gray-bg, 10%);
+    }
+    &:focus {
+        text-decoration: none;
+        color: @inverse;
+        cursor: pointer;
+    }
+}
