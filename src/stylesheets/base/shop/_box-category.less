@@ -1,9 +1,17 @@
+.box_category {
+    margin-bottom: 10px;
+}
+
 .center, .box_category, .box_plan {
     text-align: center;
 }
 
-.box_icon, .box_plan, .box_icon_plan {
+.box_icon, .box_icon_plan {
     border: 1px solid @border-color;
+}
+
+.box_plan {
+    padding: 12px 12px 12px 0 !important;
 }
 
 .box_desc {
@@ -23,13 +31,19 @@
         margin-bottom: 20px;
     }
 }
+
 .box_icon i {
     font-size: 130px;
     margin: 40px;
 }
 
+.box_icon_plan i {
+    font-size: @font-xxl;
+    margin: 20px;
+}
+
 .box_group {
-    font-size: 14px;
+    font-size: @font-sm;
     margin-top: 15px;
     text-align: center;
     h3::after {
@@ -39,6 +53,9 @@
         margin: 20px auto;
         transition: width 0.3s ease 0s;
         width: 30px;
+    }
+    &:hover h3::after {
+        width: 90px;
     }
 }
 
@@ -51,7 +68,7 @@
         color: @inverse;
         display: block;
         i {
-        font-size: 42px;
+        font-size: @font-xl;
         line-height: 96px;
         background-color: @dark-gray;
         border-radius: 50%;
