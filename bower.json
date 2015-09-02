@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "homepage": "https://github.com/railsblocks/railsblocks-theme",
   "authors": [
-    "Celso Fernandes <fernandes@zertico.com>"
+    "Caio Ferreira <caio@zertico.com>",
+    "Celso Fernandes <fernandes@zertico.com>",
+    "Marcelo Borges <marcelo@zertico.com>"
   ],
   "description": "theme for railsblocks",
   "moduleType": [
