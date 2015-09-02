@@ -1,0 +1,46 @@
+.table_cart td {
+    border-color: @light-gray;
+    padding: 12px 15px !important;
+    vertical-align: middle !important;
+    &.icon_cart a {
+	    display: block;
+	    width: @l;
+	}
+    .remove_cart {
+	    color: @red;
+	    font-size: @font-sm;
+	}
+	input.coupon {
+	    height: 38px;
+	    padding: 8px 14px;
+	    transition: border-color 0.15s ease-in-out 0s;
+	    width: 100%;
+	    margin: 5px;
+	}
+	.total_value {
+	    font-size: @font-md;
+	}
+	.quantity_item_cart {
+	    display: inline-block;
+	    background-color: @light-gray;
+	    .qty_item {
+		    border-color: @dark-gray;
+		    border-style: none solid;
+		    border-width: 0 1px;
+		    margin-bottom: 0;
+		    text-align: center;
+		    width: 50px;
+		}
+		.less, .add {
+		    border: 0 none transparent;
+		    cursor: pointer;
+		    display: block;
+		    width: 36px;
+		}
+		* {
+			float: left;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+}
