@@ -7,6 +7,19 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
+.btn {
+	font-size: 12px;
+}
+
+.btn-default{
+    background: transparent linear-gradient(to bottom, #FFF 0%, #F7F7F7 100%) repeat scroll 0% 0%;	
+    border: 1px solid #E7EAEC;
+    color: #676A6C;
+    &:hover{
+    	border: 1px solid #D2D2D2;
+    }
+}
+
 // == Helpers
 //
 //##
@@ -137,8 +150,8 @@ small{
 		.comp-s-item{
 			padding: 30px 10px 40px;
 		}
-		.companies{
-			.companies-item{
+		.s-element{
+			.s-element-item{
 				padding: 10px 30px;
 				border-bottom: 1px solid #E7E7EC;
 				i{
@@ -169,9 +182,14 @@ small{
 		}
 		.summary{
 			padding: 15px 30px 25px;
+				h5{
+					float: left;
+				}
 			.summary-group{
-				margin: 10px 0px;
+				width: 100%;
+				margin: 5px 0px;
 				font-weight: 300;
+				float: left;
 				.summary-label{
 					color: lighten(@text-color, 40%);
 				}
@@ -187,7 +205,7 @@ small{
 #page_content {
 	position: relative;
 	.wrap_content {
-	    padding: 80px 0;
+	    padding: 40px 0;
 	}
 }
 
@@ -286,13 +304,25 @@ small{
 
 // Footer
 .footer{
+	font-size: 12px;
+	.copys{
+		padding: 8px 0px 0px;
+	}
+	.mini-menu{
+		span{
+			vertical-align: -3px;
+		}
+	}
+	.btn-feeds{
+		font-size: 12px;
+	}
 	&.fixed{
 		position: fixed;
 		bottom: 0px;
 		left: 0px;
 		right: 0px;
 		z-index: 1000;
-		padding: 10px 20px;
+		padding: 8px 20px;
 		background: #FFF none repeat scroll 0% 0%;
 		border-top: 1px solid @border-color;
 		margin-left: @sidebar-width;
@@ -339,7 +369,8 @@ small{
     margin-bottom: 30px;
     position: relative;
     h3 {
-    	border-bottom: 2px solid @border-color;
+    	padding: 0px 0px 15px;
+    	border-bottom: 1px solid @border-color;
     }
 }
 

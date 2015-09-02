@@ -25,7 +25,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
+    "bootstrap-sass-official": "~3.3.5",
     "fontawesome": "~4.4.0",
-    "bootstrap-sass-official": "~3.3.5"
+    "select2": "~4.0.0"
   }
 }
