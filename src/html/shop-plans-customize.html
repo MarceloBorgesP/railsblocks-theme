@@ -42,7 +42,7 @@
         </li>
       </ul>
     </div>
-    <form id="get_price" action="/br/shop/cart/custom" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="9rguO7VRgNkueBNq+uopCIATWq0pRhlXmGMM7ckXKpkhhBEmCu6lWR6h0Lk/+dBGOZLy1nClqQyjhaGCHYn+9g==">
+    <form id="get_price">
         <div class="container clearfix">
           <div class="col-md-9">
             <div class="row">
@@ -50,30 +50,29 @@
               <div class="col-md-6">
                 <label>Hostname</label>
                 <div class="form-group">
-                  <input class="form-control input-lg" data-resource="hostname" name="host_name" type="text">
+                  <input class="form-control" type="text">
                 </div>
               </div>
               <div class="col-md-6">
                 <label>Domínio</label>
                 <div class="form-group">
-                  <input class="form-control input-lg" data-resource="domain" name="domain_name" type="text">
+                  <input class="form-control" type="text">
                 </div>
               </div>
             </div>
-            <div class="clearfix"></div>
             <hr>
             <div class="row">
               <h3>Configuração do Sistema</h3>
               <div class="col-md-4">
                 <label>Localização de Datacenter</label>
-                <select class="form-control select select-primary select_full" data-resource="datacenter" data-toggle="select" id="datacenter">
-                  <option value="">Escolha um Datacenter</option>
+                <select class="form-control select select-primary select_full" id="datacenter">
+                  <option>Escolha um Datacenter</option>
                 </select>
               </div>
               <div class="col-md-4">
                 <label>Processor</label>
-                <select class="form-control select select-primary select_full" data-resource="processor" data-toggle="select" id="processors">
-                  <option value="">Escolha uma CPU</option>
+                <select class="form-control select select-primary select_full" id="processors">
+                  <option>Escolha uma CPU</option>
                 </select>
               </div>
             </div>
@@ -82,17 +81,15 @@
               <div class="col-md-12">
                 <label>
                   Memória RAM
-                  <span class="popover_icon_help" data-container="body" data-content="Quanto mais RAM, mais processos poderão ser executados ao mesmo tempo, isso ajuda a utilizar, por exemplo, banco de dados e servidor web na mesma máquina, e suportar maior demanda de acesso." data-placement="top" data-toggle="popover" title="RAM"></span>
+                  <span class="popover_icon_help" title="RAM"></span>
                 </label>
-                <div class="slider" data-resource="ram" id="slider_ram"></div>
+                <div class="slider" id="slider_ram"></div>
               </div>
-              <div class="clearfix"></div>
             </div>
             <hr>
             <div class="row">
               <div class="col-md-12">
                 <label class="mb_l">Sistema Operacional</label>
-                <div class="clearfix"></div>
                 <div class="row">
                   <div class="col-md-3">
                     <div class="box_SO active">
@@ -100,8 +97,9 @@
                         <img src="/assets/images/SO/redhat.png">
                       </div>
                     </div>
-                    <div class="select2-container form-control select select-primary select_full select_os_code" id="s2id_redhat"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-3">RedHat</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen3" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-3" id="s2id_autogen3"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen3_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-3" id="s2id_autogen3_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-3">   </ul></div></div><
--                    <option value="Redhat EL - Latest">Redhat EL - Latest</option><option value="Redhat EL - Latest (64 bit)">Redhat EL - Latest (64 bit)</option><option value="Redhat EL - Latest (32 bit)">Redhat EL - Latest (32 bit)</option><option value="Red Hat Enterprise Linux 7.x - Minimal Install (64 bit)">Red Hat Enterprise Linux 7.x - Minimal Install (64 bit)</option><option value="Red Hat Enterprise Linux 6.x - Minimal Install (64 bit)">Red Hat Enterprise Linux 6.x - Minimal Install (64 bit)</option><option value="Red Hat Enterprise Linux 6.x - Minimal Install (32 bit)">Red Hat Enterprise Linux 6.x - Minimal Install (32 bit)</option><option value="Red Hat Enterprise Linux 5.x - Minimal Install (64 bit)">Red Hat Enterprise Linux 5.x - Minimal Install (64 bit)</option><option value="Red Hat Enterprise Linux 5.x - Minimal Install (32 bit)">Red Hat Enterprise Linux 5.x - Minimal Install (32 bit)</option></select>
+                    <select class="form-control select select-primary select_full select_os_code" id="redhat">
+                      <option>RedHat</option>
+                    </select>
                   </div>
                   <div class="col-md-3">
                     <div class="box_SO">
@@ -109,8 +107,8 @@
                         <img src="/assets/images/SO/debian.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="debian">
-                      <option value="">Debian</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="debian">
+                      <option>Debian</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -119,8 +117,8 @@
                         <img src="/assets/images/SO/microsoft.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="windows">
-                      <option value="">Windows</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="windows">
+                      <option>Windows</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -129,8 +127,8 @@
                         <img src="/assets/images/SO/centos.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="centos">
-                      <option value="">CentOs</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="centos">
+                      <option>CentOs</option>
                     </select>
                   </div>
                 </div>
@@ -141,8 +139,8 @@
                         <img src="/assets/images/SO/vyatta.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="vyatta">
-                      <option value="">Vyatta</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="vyatta">
+                      <option>Vyatta</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -151,8 +149,8 @@
                         <img src="/assets/images/SO/ubuntu.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="ubuntu">
-                      <option value="">Ubuntu</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="ubuntu">
+                      <option>Ubuntu</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -161,8 +159,8 @@
                         <img src="/assets/images/SO/cloudlinux.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="cloudlinux">
-                      <option value="">CloudLinux</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="cloudlinux">
+                      <option>CloudLinux</option>
                     </select>
                   </div>
                   <div class="col-md-4 hidden">
@@ -171,8 +169,8 @@
                         <img src="/assets/images/SO/other_options.png">
                       </div>
                     </div>
-                    <select class="form-control select select-primary select_full select_os_code" data-resource="operating_system" data-toggle="select" id="others">
-                      <option value="">Mais Opções</option>
+                    <select class="form-control select select-primary select_full select_os_code" id="others">
+                      <option>Mais Opções</option>
                     </select>
                   </div>
                 </div>
@@ -184,7 +182,7 @@
                 <label>Disco</label>
                 <center class="switch_disk mb_l">
                   <span class="switch_option1 active">SAN</span>
-                  <input data-off-text="&amp;nbsp;" data-on-text="&amp;nbsp;" data-toggle="switch" id="custom-switch-disk" type="checkbox">
+                  <input id="custom-switch-disk" type="checkbox">
                   <span class="switch_option2">LOCAL</span>
                 </center>
                 <div class="tabbable tabs_disks">
@@ -216,12 +214,12 @@
                   <div class="tab-content row">
                     <div class="tab-pane active col-md-12" id="tab11">
                       <br>
-                      <div class="slider" data-resource="disk1" id="slider_disk1_sun"></div>
+                      <div class="slider" id="slider_disk1_sun"></div>
                       <br>
                     </div>
                     <div class="tab-pane col-md-12" id="tab12">
                       <br>
-                      <div class="slider" data-resource="disk2" id="slider_disk2_sun"></div>
+                      <div class="slider" id="slider_disk2_sun"></div>
                       <br>
                     </div>
                     <div class="tab-pane col-md-12" id="tab13">
@@ -243,12 +241,12 @@
                   <div class="tab-content hidden row">
                     <div class="tab-pane active col-md-12" id="tab21">
                       <br>
-                      <div class="slider" data-resource="disk1" id="slider_disk1_local"></div>
+                      <div class="slider" id="slider_disk1_local"></div>
                       <br>
                     </div>
                     <div class="tab-pane col-md-12" id="tab22">
                       <br>
-                      <div class="slider" data-resource="disk2" id="slider_disk2_local"></div>
+                      <div class="slider" id="slider_disk2_local"></div>
                       <br>
                     </div>
                   </div>
@@ -260,11 +258,10 @@
               <h3>Opções de Rede</h3>
               <div class="col-md-4">
                 <label>Velocidade do Link</label>
-                <select class="form-control select select-primary select_full" data-resource="network_component" data-toggle="select" id="uplinks">
+                <select class="form-control select select-primary select_full" id="uplinks">
                   <option value="">Escolha a velocidade do Link</option>
                 </select>
               </div>
-              <div class="clearfix"></div>
             </div>
             <hr>
             <div class="row mt_l">
@@ -280,7 +277,7 @@
               <h3>Valor</h3>
               <center class="switch_price">
                 <span class="switch_option1 active">Hora</span>
-                <input data-off-text="&amp;nbsp;" data-on-text="&amp;nbsp;" data-toggle="switch" id="custom-switch-price" type="checkbox">
+                <input id="custom-switch-price" type="checkbox">
                 <span class="switch_option2">Mês</span>
               </center>
               <br>
