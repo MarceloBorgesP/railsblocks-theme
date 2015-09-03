@@ -1,7 +1,8 @@
-var path            = require('path')
-var paths           = require('./')
-var webpack         = require('webpack')
-var webpackManifest = require('../lib/webpackManifest')
+var path              = require('path')
+var paths             = require('./')
+var webpack           = require('webpack')
+var webpackManifest   = require('../lib/webpackManifest')
+//var ion.rangerSlider  = require('ion-rangeslider')
 
 module.exports = function(env) {
   var jsSrc = path.resolve(paths.sourceAssets + '/javascripts/')
