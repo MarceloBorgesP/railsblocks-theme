@@ -17,12 +17,6 @@
             top: 30px;
             width: 50%;
         }
-        &.active a, &:hover a  {
-            background-color: @text-color;
-            border-color: @text-color;
-            color: #FFFFFF;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-        }
         &::after {
             left: auto;
             margin: 0 -26px 0 0;
@@ -43,6 +37,12 @@
             cursor: pointer;
             font-size: 28px;
             text-decoration: none;
+        }
+        &.active a, &:hover a  {
+            background-color: @text-color;
+            border-color: @text-color;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         }
     }
 }
