@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Theme
 
 The idea of this project is create a base theme that can be customized and used in any open source project.
@@ -9,39 +8,16 @@ To use gulp, we got the [gulp starter](https://github.com/greypants/gulp-starter
 
 ## Developing
 
-### Features
-
-- Compile SASS (less)
-  - Autoprefix
-  - Minify
-- Compile JS with [Webpack](http://webpack.github.io/)
-=======
-gulp-starter
-============
-```bash
-git clone https://github.com/greypants/gulp-starter.git MyApp
-cd MyApp
-git checkout 2.0
-npm install
-npm start
-```
-
-Gulp Starter has evolved into a full featured modern asset pipeline. It can be used as-is as a static site builder, or can be configured and integrated into your own development environment and site structure. This is not an installable module. This is meant to be a starting point — collection of tasks and configuration. Fork it or `git clone https://github.com/greypants/gulp-starter.git` and modify to fit your project.
-
-**Demo Compiled with gulp-starter:** http://greypants.github.io/gulp-starter/
-(view files on [gh-pages](https://github.com/greypants/gulp-starter/tree/gh-pages) branch)
-
 ## Features
-- **CSS:** [Sass](http://sass-lang.com/) (indented, scss, or both)
-  - Libsass (node-sass) for super fast compiles
+- **CSS:** [Less](http://lesscss.org/)
+  - Libless (node-less) for super fast compiles
   - Autoprefixer
+  - Minify
 - **JS:** Modular ES6 with [Babel](http://babeljs.io/) and [Webpack](http://webpack.github.io/)
->>>>>>> upstream/2.0
   - Async requires
   - Multiple bundles
   - Shared modules
   - Source Maps
-<<<<<<< HEAD
   - Babel for ES6 and JSX
   - Uglify and optimizes for production builds (not in dev)
 - Compile static html with [Nunjucks](https://mozilla.github.io/nunjucks/)
@@ -55,31 +31,6 @@ Gulp Starter has evolved into a full featured modern asset pipeline. It can be u
 - Testing with Karma, Mocha, Chai, Sinon
 - Travis CI integration
 - Local production sever for testing
-
-### Revisions from 1.0
-- Full asset pipeline and static html compilation
-- New directory structure
-- Replaced Browserify with [Webpack](http://webpack.github.io/docs/webpack-for-browserify-users.html)!
-  - Async CommonJS module requires
-  - Automatically splits out shared dependencies
-- New `html` task w/ Nunjucks templating/compiling
-- Replace CoffeeScript with ES6 ([Babel.js](http://babeljs.io/))
-- New `server` task to test production files locally
-- New `deploy` task to deploy the public directory to gh-pages
-- New `rev` task that revisions filenames and compress css and js
-- Use `gulp-watch` instead of `gulp.watch` (correctly handles new files)
-- New `build:production` task runs tests, compression + filename revisioning
-- Remove old examples and extraneous dependencies
-- Upgrades dependencies
-- Added example Travis CI integration that runs karma tests and production build
-- Add SVG sprite implementation from @synapticism in #100
-
-## Live Demo
-
-http://greypants.github.io/gulp-starter/
-
-Result of running `gulp deploy`
-=======
 - **HTML**: Static templating with [Nunjucks](https://mozilla.github.io/nunjucks/)
 - **Images:**
   - **SVG Sprites**: Compiles a spritesheet from a folder of SVGs
@@ -103,7 +54,6 @@ Result of running `gulp deploy`
 
 # Basic Usage
 Make sure Node 12.x is installed. I recommend using [NVM](https://github.com/creationix/nvm) to manage versions.
->>>>>>> upstream/2.0
 
 #### Install Dependencies
 ```
@@ -249,27 +199,3 @@ GitHub Pages isn't the most robust of hosting solutions (you're going to run int
 
 [Divshot](https://divshot.com/) and [Surge.sh](http://surge.sh/) are a couple great alternatives for production-ready static hosting to check out, and are just as easy to deploy to. Where ever you're deploying to, all you need to do is `npm run production` and transfer the contents of the `public` folder to your server however you see fit.
 
-#
-
-## Notable changes from 1.0
-- Full asset pipeline and static html compilation
-- `gulpfile.js` is now a directory
-- update directory structure
-- Replaced Browserify with [Webpack](http://webpack.github.io/docs/webpack-for-browserify-users.html)!
-  - Async CommonJS module requires
-  - Automatically splits out shared dependencies
-- New `html` task w/ Nunjucks templating/compiling
-- Replace CoffeeScript with ES6 ([Babel.js](http://babeljs.io/))
-- New `server` task to test production files locally
-- New `deploy` task to deploy the public directory to gh-pages
-- New `rev` task that revisions filenames and compress css and js
-- Use `gulp-watch` instead of `gulp.watch` (correctly handles new files)
-- New `build:production` task runs tests, compression + filename revisioning
-- Remove old examples and extraneous dependencies
-- Upgrades dependencies
-- Added example Travis CI integration that runs karma tests and production build
-- Add SVG sprite implementation from @synapticism in #100
-
-[![Build Status](https://travis-ci.org/greypants/gulp-starter.svg?branch=static-server)](https://travis-ci.org/greypants/gulp-starter)
-
-Made with ♥ at [Viget](http://viget.com)!
