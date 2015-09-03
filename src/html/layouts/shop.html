@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %} Foo Inc - Base theme {% endblock %}</title>
-    <link rel="stylesheet" href="stylesheets/global.css"> {% block head %}{% endblock %}
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/theme.css"> {% block head %}{% endblock %}
 </head>
 
 <body>
@@ -22,7 +21,7 @@
         </div>
     </section>
     {% include "parts/footer.html" %}
-    <script src="javascripts/base.js"></script>
+    <script src="javascripts/theme.js"></script>
     {% block javascript %}{% endblock %}
   </div>
 </body>
