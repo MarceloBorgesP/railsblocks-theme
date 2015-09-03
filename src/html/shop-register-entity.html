@@ -1,0 +1,137 @@
+{% extends 'layouts/shop.html' %}
+
+{% block content %}
+
+<section class="page_title page_title_mini">
+  <div class="container clearfix">
+    <h1>Servidores Dedicados</h1>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Página Inicial</a>
+      </li>
+      <li>
+        <a href="#">Produtos e Serviços</a>
+      </li>
+      <li class="active">Servidores Dedicados</li>
+    </ol>
+  </div>
+</section>
+<section id="page_content">
+  <div class="wrap_content">
+    <div class="container clearfix">
+      <ul class="menu_steps clearfix">
+        <li>
+          <a class="step_icon fa fa-database" href="#"></a>
+          <h5>Configurar Produto</h5>
+        </li>
+        <li>
+          <a class="step_icon fa fa-shopping-cart" href="#"></a>
+          <h5>Revisar Compra</h5>
+        </li>
+        <li class="active">
+          <a class="step_icon fa fa-user" href="#"></a>
+          <h5>Identificação</h5>
+        </li>
+        <li>
+          <a class="step_icon fa fa-money" href="#"></a>
+          <h5>Efetuar Pagamento</h5>
+        </li>
+        <li>
+          <a class="step_icon fa fa-check" href="#"></a>
+          <h5>Produto Liberado</h5>
+        </li>
+      </ul>
+    </div>
+  <div class="container clearfix">
+      <form id="new_organization">
+        <div class="row mt_20">
+            <div class="container">
+              <div class="col-md-3 col-md-offset-4">
+                <label class="radio">
+                  <input type="radio" value="cpf" name="group_org" class="custom-radio">
+                  <span style="padding-left: 5px;">Pessoa Física</span>
+                </label>
+              </div>
+              <div class="col-md-3">
+                <label class="radio">
+                  <input type="radio" value="cnpj" name="group_org" class="custom-radio"
+                  >
+                  <span style="padding-left: 5px;">Pessoa Jurídica</span>
+                </label>
+              </div>
+                <div class="col-md-12">
+                    <h5>Personal Information</h5>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label">Razao Social</label>
+                            <input class="form-control" type="text" placeholder="Foo Inc." />
+                        </div>
+                        <div class="col-md-8">
+                            <label class="control-label">Nome Fantasia</label>
+                            <input class="form-control" type="text" placeholder="Foo Inc." />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">CNPJ</label>
+                            <input class="form-control" type="text" placeholder="xx.xxx.xxx/xxxx-xx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h5>Contact Information</h5>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label class="control-label">Email</label>
+                            <input class="form-control" type="email" placeholder="example@example.com" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Telephone</label>
+                            <input class="form-control" type="text" placeholder="xx xxxx-xxxx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h5>Address Information</h5> 
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" placeholder="Street" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class=" form-control" type="text" placeholder="Number" />
+                        </div>
+                        <div class="col-md-8">
+                            <input class="form-control" type="text"  placeholder="Complement Address" />
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="City" />
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Zipcode" />
+                        </div>
+                        <div class="col-md-4">
+                            <select id="organization_country" name="organization[country]" class="form-control">
+                                <option>Country</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CH">Chile</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="State" />
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-12 mt_20">
+            <div class="col-md-3">
+              <input type="submit" class="btn btn btn-primary" value="Criar Organization" name="commit">
+            </div>
+            </div>
+          </div>
+        </form>
+  </div>
+  </div>
+</section>
+
+
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

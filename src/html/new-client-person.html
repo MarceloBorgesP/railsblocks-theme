@@ -170,35 +170,33 @@
         <div class='col-lg-8'>
             <h4>New Client</h4>
             <form novalidate="novalidate" class="simple_form form-horizontal" id="" action="" method="post">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        
-                    </div>
+                <div class="col-md-3 col-md-offset-4">
+                    <label class="radio">
+                        <input type="radio" value="cpf" name="group_org" class="custom-radio">
+                        <span style="padding-left: 5px;">Pessoa Física</span>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label class="radio">
+                        <input type="radio" value="cnpj" name="group_org" class="custom-radio"
+                      >
+                        <span style="padding-left: 5px;">Pessoa Jurídica</span>
+                    </label>
                 </div>
                 <div class="col-md-12">
                     <h5>Personal Information</h5>
                     <div class="form-group">
-                        <div class="col-md-6">
-                            <input class="form-control" type="text" placeholder="Full name" />
-                        </div>
-                        <div class="col-md-6">
-                            <input class="form-control" type="text" placeholder="Nickname" />
-                        </div>
                         <div class="col-md-12">
-                            <input class="form-control" type="text" placeholder="Document" />
+                            <label class="control-label">Name</label>
+                            <input class="form-control" type="text" placeholder="Full Name" />
                         </div>
-                        <div class="col-md-3 col-md-offset-4">
-                          <label class="radio">
-                            <input type="radio" checked="checked" value="cpf" name="group_org" class="custom-radio">
-                            <label style="padding-left: 5px;">Pessoa Física</label>
-                          </label>
+                        <div class="col-md-8">
+                            <label class="control-label">Nickname</label>
+                            <input class="form-control" type="text" placeholder="How would you like to be called?" />
                         </div>
-                        <div class="col-md-3">
-                          <label class="radio">
-                            <input type="radio" value="cnpj" name="group_org" class="custom-radio"
-                            >
-                            <label style="padding-left: 5px;">Pessoa Jurídica</label>
-                          </label>
+                        <div class="col-md-4">
+                            <label class="control-label">CPF</label>
+                            <input class="form-control" type="text" placeholder="XXX.XXX.XXX-XX" />
                         </div>
                     </div>
                 </div>
@@ -207,7 +205,7 @@
                     <div class="form-group">
                         <div class="col-md-6">
                             <label class="control-label">Email</label>
-                            <input class="form-control" type="email" placeholder="example@example" />
+                            <input class="form-control" type="email" placeholder="example@example.com" />
                         </div>
                         <div class="col-md-6">
                             <label class="control-label">Telephone</label>
@@ -215,7 +213,6 @@
                         </div>
                     </div>
                 </div>
-                <hr>
                 <div class="col-md-12">
                     <h5>Address Information</h5> 
                     <div class="form-group">
@@ -235,20 +232,19 @@
                             <input class="form-control" type="text" placeholder="Zipcode" />
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="State" />
+                            <select id="organization_country" name="organization[country]" class="form-control">
+                                <option>Country</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CH">Chile</option>
+                            </select>
                         </div>
                         <div class="col-md-4">
-                            </label>
-                                <select id="organization_country" name="organization[country]" class="form-control">
-                                    <option>Country</option>
-                                    <option value="BR">Brasil</option>
-                                    <option value="CH">Chile</option>
-                                </select>
-                            </div>
+                            <input class="form-control" type="text" placeholder="State" />
+                        </div>
                     </div>
                 </div>
                 <div class='col-md-4 col-md-offset-7 text-right'>
-                    <input type="submit" name="commit" value="Criar Company" class="btn btn-default btn-inverse" />
+                    <input type="submit" name="commit" value="Create client" class="btn btn-default btn-inverse" />
                 </div>
             </form>
         </div>
@@ -275,7 +271,7 @@
 
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
-                    <span>Document</span>   
+                    <span>CPF</span>   
                 </div>
                 <div class="col-md-7">
                     <span>Loremipsum</span> 
@@ -293,9 +289,9 @@
 
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
-                    <span>Zipcode</span>
+                    <span>Telephone</span>
                 </div>
-                <div class="col-md-7 clearfix">
+                <div class="col-md-7">
                     <span>Loremipsum</span>     
                 </div>
             </div>
@@ -329,6 +325,15 @@
 
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
+                    <span>Zipcode</span>
+                </div>
+                <div class="col-md-7 clearfix">
+                    <span>Loremipsum</span>     
+                </div>
+            </div>
+
+            <div class="summary-group clearfix">
+                <div class="summary-label col-md-5">
                     <span>City</span>
                 </div>
                 <div class="col-md-7">
@@ -348,15 +353,6 @@
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
                     <span>Country</span>
-                </div>
-                <div class="col-md-7">
-                    <span>Loremipsum</span>     
-                </div>
-            </div>
-
-            <div class="summary-group clearfix">
-                <div class="summary-label col-md-5">
-                    <span>Telephone</span>
                 </div>
                 <div class="col-md-7">
                     <span>Loremipsum</span>     
