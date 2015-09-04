@@ -6,7 +6,7 @@
     "node": "0.12.2",
     "npm": "2.7.4"
   },
-  "homepage": "http://greypants.github.io/gulp-starter/",
+  "homepage": "https://github.com/greypants/gulp-starter#readme",
   "repository": {
     "type": "git",
     "url": "git://github.com/greypants/gulp-starter.git"
@@ -60,6 +60,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.3",
+    "ion-rangeslider": "^2.0.13",
     "jquery": "^2.1.4",
     "karma": "0.13.2",
     "karma-chrome-launcher": "^0.2.0",
@@ -83,7 +84,6 @@
   "bugs": {
     "url": "https://github.com/greypants/gulp-starter/issues"
   },
-  "homepage": "https://github.com/greypants/gulp-starter#readme",
   "main": "gulpfile.js",
   "author": "",
   "license": "ISC"

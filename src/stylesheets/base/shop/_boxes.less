@@ -77,3 +77,28 @@
         }
     }
 }
+
+.box_circle {
+    position: relative;
+    padding-left: 80px;
+    &:first-child {
+        margin-top: 0;
+    }
+    .box_circle_icon {
+        border: 1px solid darken(@dark-gray, 30%);
+        border-radius: 50%;
+        height: 64px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 64px;
+        i {
+            font-size: 28px;
+            line-height: 64px;
+            text-align: center;
+            color: darken(@dark-gray, 30%);
+            width: 100%;
+        }
+    }
+}
+
