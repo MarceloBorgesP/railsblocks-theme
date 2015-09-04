@@ -19,8 +19,7 @@
     margin: 0 -26px 0 0;
     right: 0;
 }
-
-.menu_steps::first-child::before, .menu_steps::last-child::after {
+.process-steps li:first-child::before, .process-steps li:last-child::after, .menu_steps li:first-child::before, .menu_steps li:last-child::after, .menu_steps li:first-child::before, .menu_steps li:last-child::after {
     display: none;
 }
 .menu_steps li a.step_icon {
@@ -40,7 +39,7 @@
     font-size: 28px;
     text-decoration: none;
 }
-.menu_steps li.active a, .menu_steps li:hover a  {
+.menu_steps li.active a, .menu_steps li:hover a {
     background-color: darken(@dark-gray, 30%);
     border-color: darken(@dark-gray, 30%);
     color: #fff;
