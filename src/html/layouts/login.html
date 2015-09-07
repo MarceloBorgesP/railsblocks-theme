@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>{% block title %} Foo Inc - Base theme {% endblock %}</title>
   <link rel="stylesheet" href="stylesheets/theme.css">
-
   {% block head %}{% endblock %}
 </head>
-<body>
-  {% block content %}{% endblock %}
-  <script src="javascripts/theme.js"></script>
-  {% block javascript %}{% endblock %}
+<body class="login">
+  <div class="container">
+    {% block content %}{% endblock %}
+    <script src="javascripts/theme.js"></script>
+    {% block javascript %}{% endblock %}
+  </div>
 </body>
 </html>

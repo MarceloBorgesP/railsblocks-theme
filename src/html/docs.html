@@ -30,7 +30,7 @@
                 <small>
                     <strong>Documentation created:</strong> 20/08/2015<br/>
                     <strong>Latest update:</strong> 20/08/2015<br/>
-                    <strong>By:</strong> Foo Inc Team<br/>
+                    <strong>By:</strong> Zertico Team<br/>
                     <strong>Theme Version:</strong> 0.01<br/>
                 </small>
             </div>
@@ -42,15 +42,15 @@
 <div class="container">
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-md-12">
         <h2>
             Table of Contents
         </h2>
         <ul>
             <li><a href="#documentation">About documentation</a></li>
             <li><a href="#folder_structure">Folder structure</a></li>
-            <li><a href="#admin_layout_structure">Layout structure for admin context</a></li>
-            <li><a href="#store_layout_structure">Layout structure for store context</a></li>
+            <li><a href="#admin_layout_structure">Company layout</a></li>
+            <li><a href="#store_layout_structure">Store layout</a></li>
             <li><a href="#less_structure">LESS structure</a></li>
         </ul>
 
@@ -80,8 +80,10 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <code>railsblocks_theme/
     ├── <strong>fonts/</strong>
     ├── <strong>html/</strong>
-        ├── <strong>layout/</strong>
-            ├── application.html
+        ├── <strong>layouts/</strong>
+            ├── admin.html
+            ├── shop.html
+            ├── documentation.html
         ├── <strong>macros/</strong>
             ├── helpers.html
         ├── <strong>parts/</strong>
@@ -130,9 +132,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="col-md-6">
             <a target="_blank" href="images/layouts.jpg"><img class="img-responsive" src="images/layouts.jpg" alt="page structure"></a>
         </div>
-    </div>
         <a name="admin_layout_structure" class="anchor"></a>
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <section>
                 <h3>Layout structure</h3>
                 <p>The base theme for the admin context covers 5 main sections of the layout and also some basic CSS that aligns all together. Those 5 main sections are:</p>
@@ -143,14 +144,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <li>Main content</li>
                     <li>Fixed footer</li>
                 </ul>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h4>Fixed left sidebar</h4>
                     <p>The left sidebar contains the main menu. This main menu has all the main links to the other internal system pages.</p>
 
                     <h4>Top navbar</h4>
                     <p>The top navbar contains some user interaction elements such as: messages, notifications and also a profile menu.</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h4>Page title and breadcrumb</h4>
                     <p>Contains only the page title and the page breadcrumbs.</p>
                     <h4>Main content</h4>
@@ -161,13 +162,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
         </div>
+    </div>
     <hr>
     <div class="col-md-12">
-        <h2>Store context Theme</h2>
+        <h2>Store Context Theme</h2>
         <div class="col-md-6">
             <h3>Main HTML elements</h3>
 
-            <p>Theme files have almost unchanging structure consisting of:</p>
+            <p>Like the Admin context, the Store context also has an unchanging structure:</p>
             <ol>
                 <li><code>#shop</code> main container for body elements.</li>
                 <li><code>#header</code> navigation <b>menu</b>.</li>
@@ -184,7 +186,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <a target="_blank" href="images/layouts.jpg"><img class="img-responsive" src="images/layouts.jpg" alt="page structure"></a>
         </div>
         <a name="store_layout_structure" class="anchor"></a>
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <section>
                 <h3>Layout structure</h3>
                 <p>The base theme for the store context covers 5 main sections of the layout and also some basic CSS that aligns all together. Those 5 main sections are:</p>
@@ -195,14 +197,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <li>Main content</li>
                     <li>Fixed footer</li>
                 </ul>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h4>Fixed header</h4>
                     <p>The header contains the main menu. Here we can find the main links for navigation on the system.</p>
 
                     <h4>Page Menu</h4>
                     <p>The Page Menu contains links for navigation inside the Shop categories.</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <h4>Page title and breadcrumb</h4>
                     <p>Contains only the page title and the page breadcrumbs.</p>
 
@@ -217,7 +219,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div>
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <hr>
             <section>
                 <h3>LESS structure</h3>
@@ -250,7 +252,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </section>
             <hr>
             <footer>
-                <p>&copy; Foo Inc 2015 | Railblocks Base Theme</p>
+                <p>&copy; Zertico 2015 | Railblocks Base Theme</p>
             </footer>
         </div>
     </div>

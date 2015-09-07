@@ -1,0 +1,180 @@
+{% extends 'layouts/shop.html' %} {% block content %}
+<section class="page_title page_title_mini">
+    <div class="container clearfix">
+        <h2>Servidores Dedicados</h2>
+        <span>As melhores soluções de Cloud do mercado.</span>
+        <ol class="breadcrumb">
+            <li>
+                <a>Página Inicial</a>
+            </li>
+            <li>
+                <a>Produtos e Serviços</a>
+            </li>
+            <li class="active">Servidores Dedicados</li>
+        </ol>
+    </div>
+</section>
+
+<section id='page_content'>
+    <div class='wrap_content'>
+        <!-- steps -->
+        <div class="container">
+            <ul class="menu_steps clearfix">
+                <li class="active">
+                    <a class="step_icon fa fa-database" href="#"></a>
+                    <h5>Configurar Produto</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-shopping-cart" href="#"></a>
+                    <h5>Revisar Compra</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-user" href="#"></a>
+                    <h5>Identificação</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-money" href="#"></a>
+                    <h5>Efetuar Pagamento</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-check" href="#"></a>
+                    <h5>Produto Liberado</h5>
+                </li>
+            </ul>
+        </div>
+        <!-- content - table -->
+        <div class='container mt_40'>
+            <table class='table cart'>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço Unit.</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href='#'>Plano Small CS</a>
+                        </td>
+                        <td>
+                            <span>$100.00</span>
+                        </td>
+                        <td>2</td>
+                        <td>
+                            <span>$200.00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href='#'>Cloud Server Custom</a>
+                        </td>
+                        <td>
+                            <span>$50.00</span>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <span>$50.00</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class='container mt_40'>
+            <div class='row'>
+                <div class='col-md-6 col-md-offset-6'>
+                    <table class='table cart'>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Valor Total Servidor</strong>
+                                </td>
+                                <td>
+                                    <span>$200.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>TaxasFeature/shopping cart</strong>
+                                </td>
+                                <td>
+                                    <span>$0.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Total a Pagar</strong>
+                                </td>
+                                <td>
+                                    <span>$250.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Cambio US$-R$</strong>
+                                </td>
+                                <td>
+                                    <span>$40.0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Total Real</strong>
+                                </td>
+                                <td>
+                                    <span>
+                                        <strong>R$1000.00</strong>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class='container pt_20'>
+            <div class='row'>
+                <label>Forma de Pagamento</label>
+            </div>
+            <div class='row'>
+                <div class='col-md-3'>
+                    <label>
+                        <input data-toggle='radio' id='card' name='group1' type='radio' value='1'>
+                        <span style='padding-left: 5px;'>Credit Card</span>
+                        </input>
+                    </label>
+                </div>
+                <div class='col-md-3'>
+                    <label>
+                        <input data-toggle='radio' id='paypal' name='group1' type='radio' value='2'>
+                        <span style='padding-left: 5px;'>Paypal</span>
+                        </input>
+                    </label>
+                </div>
+                <div class='col-md-3'>
+                    <label>
+                        <input data-toggle='radio' id='pagseguro' name='group1' type='radio' value='3'>
+                        <span style='padding-left: 5px;'>PagSeguro</span>
+                        </input>
+                    </label>
+                </div>
+                <div class='col-md-3'>
+                    <label>
+                        <input checked='' data-toggle='radio' id='billet' name='group1' type='radio' value='4'>
+                        <span style='padding-left: 5px;'>Boleto</span>
+                        </input>
+                    </label>
+                </div>
+                <div class='clearfix'></div>
+            </div>
+            <div class='row mt_40'>
+                <div class='col-md-2'>
+                    <a class='btn btn-default' href='/br/mocks/shop/products/servers/released' id='change_date'>Confirmar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} {% block javascript %} {% endblock %}

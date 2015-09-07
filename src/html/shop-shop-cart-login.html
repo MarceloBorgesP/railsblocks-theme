@@ -1,0 +1,90 @@
+{% extends 'layouts/shop.html' %} {% block content %}
+<section class="page_title page_title_mini">
+    <div class="container clearfix">
+        <h2>Servidores Dedicados</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">Página Inicial</a>
+            </li>
+            <li>
+                <a href="#">Produtos e Serviços</a>
+            </li>
+            <li class="active">Servidores Dedicados</li>
+        </ol>
+    </div>
+</section>
+<section id="page_content">
+    <div class="wrap_content">
+        <div class="container">
+            <ul class="menu_steps">
+                <li>
+                    <a class="step_icon fa fa-database" href="#"></a>
+                    <h5>Configurar Produto</h5>
+                </li>
+                <li class="active">
+                    <a class="step_icon fa fa-shopping-cart" href="#"></a>
+                    <h5>Revisar Compra</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-user" href="#"></a>
+                    <h5>Identificação</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-money" href="#"></a>
+                    <h5>Efetuar Pagamento</h5>
+                </li>
+                <li>
+                    <a class="step_icon fa fa-check" href="#"></a>
+                    <h5>Produto Liberado</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="container mt_40">
+            <div id="form_login" class="col-md-4">
+                <div class="well well-lg">
+                    <form id="new_user" class="">
+                        <h4>Logar na sua Conta</h4>
+                        <br>
+                        <div class="col-md-12">
+                            <label for="user_email">Email:</label>
+                            <input type="email" id="user_email" class="form-control">
+                        </div>
+                        <div class="col-md-12 mt_20">
+                            <label>Senha:</label>
+                            <input type="password" id="user_password" class="form-control">
+                        </div>
+                        <div class="col-md-12 mb_0 mt_20">
+                            <input type="submit" class="btn btn_3D btn-primary no_margin" value="Sign In">
+                            <a href="" class="pull-right">Forgot password?</a>
+                            <br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="form_register" class="col-md-6 ml_40">
+                <h4>Não tem uma conta? Registre-se agora.</h4>
+                <br>
+                <form class="mb_0">
+                    <div class="col-md-12">
+                        <label>Email</label>
+                        <input type="email" id="user_email" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label>Senha</label>
+                        <input type="password" id="user_password" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Confirme sua senha</label>
+                        <input type="password" id="user_password_confirmation" class="form-control">
+                    </div>
+                    
+                    <div class="col-md-12 mb_0 mt_20">
+                        <input type="submit" class="btn btn-primary no_margin" value="Sign Up" name="commit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} {% block javascript %} {% endblock %}
