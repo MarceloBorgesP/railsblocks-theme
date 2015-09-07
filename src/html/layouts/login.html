@@ -1,0 +1,17 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %} Foo Inc - Base theme {% endblock %}</title>
+  <link rel="stylesheet" href="stylesheets/theme.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="login">
+  <div class="container">
+    {% block content %}{% endblock %}
+    <script src="javascripts/theme.js"></script>
+    {% block javascript %}{% endblock %}
+  </div>
+</body>
+</html>
