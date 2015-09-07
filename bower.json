@@ -18,6 +18,10 @@
     "bootstrap"
   ],
   "license": "MIT",
+  "main": [
+    "dist/css/theme.min.css",
+    "dist/js/theme.min.js"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",

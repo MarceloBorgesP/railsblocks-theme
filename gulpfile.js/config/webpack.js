@@ -37,7 +37,7 @@ module.exports = function(env) {
 
     webpackConfig.output= {
       path: jsDest,
-      filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
+      filename: env === 'production' ? '[name].min.js' : '[name].js',
       publicPath: publicPath
     }
 
