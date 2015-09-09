@@ -9,9 +9,9 @@ var karmaConfig = {
   files: [  files ],
   preprocessors: {},
   webpack: webpackConfig,
-  singleRun: process.env.TRAVIS_CI === 'true',
+  singleRun: process.env.TRAVIS === 'true',
   reporters: ['nyan'],
-  browsers: [(process.env.TRAVIS_CI === 'true'? 'Firefox' : 'Chrome')]
+  browsers: [(process.env.TRAVIS === 'true'? 'Firefox' : 'Chrome')]
 }
 
 karmaConfig.preprocessors[files] = ['webpack']

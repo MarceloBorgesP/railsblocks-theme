@@ -1,5 +1,9 @@
 # Theme
 
+[![Build Status](https://travis-ci.org/railsblocks/railsblocks-theme.svg)](https://travis-ci.org/railsblocks/railsblocks-theme)
+[![Code Climate](https://codeclimate.com/github/railsblocks/railsblocks-theme/badges/gpa.svg)](https://codeclimate.com/github/railsblocks/railsblocks-theme)
+[![Test Coverage](https://codeclimate.com/github/railsblocks/railsblocks-theme/badges/coverage.svg)](https://codeclimate.com/github/railsblocks/railsblocks-theme/coverage)
+
 The idea of this project is create a base theme that can be customized and used in any open source project.
 
 To use gulp, we got the [gulp starter](https://github.com/greypants/gulp-starter/tree/2.0) amazing project from [Dan Tello](https://github.com/greypants), and switched from sass to less.
