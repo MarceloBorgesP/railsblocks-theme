@@ -292,28 +292,32 @@ small{
 	border-radius: 0px;
 	color: lighten(@text-color, 10%);
 	.navbar-top-links{
-    	li{
-    		 display: inline-block;
-    		a{
-    			padding: 14px 15px;
-    			color: lighten(@text-color, 10%);
-    		}
-    	}
+  	li{
+  		 display: inline-block;
+  		a{
+  			padding: 14px 15px;
+  			color: lighten(@text-color, 10%);
+  		}
+  	}
 	}
-    .profiles {
-    	margin-right: 0px !important;
-        .profile-element {
-			img {
-				width: 32px;
-				margin-right: 10px;
-			}
-            a{
-                padding: 10px 10px 6px 10px !important;
-                display: inline-block;
-                color: @nav-links-gray;
-            }
-        }
+  .profiles {
+  	margin-right: 0px !important;
+    .profile-element {
+		  img {
+			  width: 32px;
+			  margin-right: 10px;
+		  }
+      a{
+        width:100%;
+        padding: 10px 10px 6px 10px !important;
+        display: inline-block;
+        color: @nav-links-gray;
+      }
+      li{
+        display: block;
+      }
     }
+  }
 }
 
 // Footer
