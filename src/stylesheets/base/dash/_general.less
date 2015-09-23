@@ -7,20 +7,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-.login{
-  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
-  .title{
-  	h3{
-  		color: white;
-  		text-align: center;
-  	}
-  }
-}
-
+//BUTTONS 
 .btn {
 	font-size: 12px;
 }
@@ -34,41 +21,6 @@ body{
     }
 }
 
-// == Helpers
-//
-//##
-
-hr{
-	border-top: 1px solid @border-color;
-}
-
-.border-bottom{
-    border-bottom: 1px solid @border-color;
-}
-
-.border-left{
-	border-left: 1px solid @border-color;
-}
-
-.form-group{
-	margin-bottom: 20px;
-}
-
-.control-label{
-	font-weight: 400;
-}
-
-.remove-padding{
-	padding: 0px !important;
-}
-
-.fix-padding-mini-dashs{
-	padding: 0px 10px 100px !important;
-}
-
-small{
-	color: @light-text-color;
-}
 // == Main Sections
 //
 //##
@@ -283,41 +235,43 @@ small{
 }
 
 // Navbar
-.show-menu{
-	margin: 8px 15px 0px;
-}
-.navbar{
+.navbar {
 	background: @gray-bg;
 	padding: 0px 0px 0px 10px;
 	border-radius: 0px;
-	color: lighten(@text-color, 10%);
-	.navbar-top-links{
-  	li{
-  		 display: inline-block;
-  		a{
-  			padding: 14px 15px;
-  			color: lighten(@text-color, 10%);
-  		}
-  	}
+	.show-menu{
+		margin: 8px 15px 0px;
 	}
-  .profiles {
-  	margin-right: 0px !important;
-    .profile-element {
-		  img {
-			  width: 32px;
-			  margin-right: 10px;
-		  }
-      a{
-        width:100%;
-        padding: 10px 10px 6px 10px !important;
-        display: inline-block;
-        color: @nav-links-gray;
-      }
-      li{
-        display: block;
-      }
-    }
-  }
+	&.navbar-inverse .navbar-brand:hover, &.navbar-inverse .navbar-brand:focus {
+		color: lighten(@text-color, 10%);
+	}
+	.navbar-top-links{
+	  	li{
+	  		 display: inline-block;
+	  		a{
+	  			padding: 14px 15px;
+	  			color: lighten(@text-color, 10%);
+	  		}
+	  	}
+	}
+	.profiles {
+	  	margin-right: 0px !important;
+	    .profile-element {
+			img {
+			  	width: 32px;
+			  	margin-right: 10px;
+		  	}
+			a {
+				width:100%;
+				padding: 10px 10px 6px 10px !important;
+				display: inline-block;
+				color: @nav-links-gray;
+			}
+	      	li{
+	       	 	display: block;
+	      	}
+	    }
+  	}
 }
 
 // Footer
@@ -390,6 +344,42 @@ small{
     	padding: 0px 0px 15px;
     	border-bottom: 1px solid @border-color;
     }
+}
+
+// == Helpers
+//
+//##
+
+hr{
+	border-top: 1px solid @border-color;
+}
+
+.border-bottom {
+    border-bottom: 1px solid @border-color;
+}
+
+.border-left {
+	border-left: 1px solid @border-color;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.control-label{
+	font-weight: 400;
+}
+
+.remove-padding{
+	padding: 0px !important;
+}
+
+.fix-padding-mini-dashs{
+	padding: 0px 10px 100px !important;
+}
+
+small{
+	color: @light-text-color;
 }
 
 //NO MARGIN
@@ -574,4 +564,9 @@ small{
 
 .pr_60{
   padding-right: @l;
+}
+
+//CENTER
+.center {
+	text-align: center;
 }
