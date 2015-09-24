@@ -6,3 +6,4 @@ Desktop.ini
 node_modules
 src/stylesheets/generated
 bower_components/
+npm-debug.log

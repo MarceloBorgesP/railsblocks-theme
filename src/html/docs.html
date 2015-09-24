@@ -100,12 +100,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     ├── <strong>stylesheets/</strong>
         ├── <strong>base/</strong>
             ├──<strong>dash/</strong>
-                ├──_general.less
+            ├──<strong>others/</strong>
+                ├──_helpers.less
                 ├──_mixins.less
                 ├──_variables.less
             ├──<strong>shop/</strong> 
-                ├── ... 
-        ├── global.less
+        ├── theme.less
 </code>
             </pre>
         </div>
@@ -227,12 +227,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <code>stylesheets/
     ├── <strong>base/</strong>
         ├──<strong>dash/</strong>
-            ├──_general.less
+        ├──<strong>others/</strong>
+            ├──_helpers.less
             ├──_mixins.less
             ├──_variables.less
-        ├──<strong>shop/</strong> 
-            ├── ... 
-    ├── global.less
+        ├──<strong>shop/</strong>  
+    ├── theme.less
 </code>
                 </pre>
                 <h4>_general.less</h4>
@@ -245,8 +245,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <h4>_variables.less</h4>
                 <p>This file contains all the coloring styles and other variables useful to be used in the other less files.</p>
 
-                <h4>shop/...</h4>
-                <p>This directory contains all stylesheets responsible for the Store. The store context has a different folder, and its style is maintained in different files in order to maintain its organization, since it has a more complex structure.</p>
+                <h4>shop/ & dash/</h4>
+                <p>These directories contain all stylesheets responsible for the Store and Admin respectively. In order to maintain the organization we decided to break the theme in smallers files and different folders. Despite our theme is considerably big, it's very easy to find what you are looking for. </p>
             </section>
             <hr>
             <footer>

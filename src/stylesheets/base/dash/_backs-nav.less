@@ -1,0 +1,41 @@
+.backs-nav{
+	color: @light-text-color;
+	padding: 0px;
+	border-bottom: 1px solid #E7EAEC;
+}
+.backs{
+	color: @light-text-color;
+	padding: 15px 10px;
+	border-bottom: 1px solid @border-color;
+	.go-back{
+		i{
+    		color: @light-text-color;
+    		font-size: 26px;
+    	}
+    	span{
+    		color: @light-text-color;
+			font-size: 14px;
+			vertical-align: 3px;
+			margin-left: 10px;
+			//font-weight: 300;
+    	}
+	}
+	.title{
+		text-align: center;
+		span{
+			font-size: 16px;
+			color: @light-text-color;
+			vertical-align: -5px;
+		}
+	}
+}
+&.toggled {
+    padding-left: @sidebar-width;
+    #sidebar-wrapper {
+	    width: @sidebar-width;
+	}
+	#page-content-wrapper {
+	    position: absolute;
+	    margin-right: -@sidebar-width;
+	}
+}

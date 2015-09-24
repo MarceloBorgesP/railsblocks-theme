@@ -1,0 +1,33 @@
+.comp-s-item{
+	padding: 30px 10px 40px;
+}
+.s-element{
+	.s-element-item{
+		padding: 10px 30px;
+		border-bottom: 1px solid #E7E7EC;
+		i{
+			margin-right: 10px;
+			color: lighten(@text-color, 10%)
+		}
+		span{
+			color: @text-color;
+		}
+		&:hover{
+			background-color: @gray-bg;
+			background-image: linear-gradient(to right, #FFF 0px, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, #FFF 100%);
+		}
+		&:last-child{
+			border-bottom: none;
+			&:hover{
+				background-color: @gray-bg;
+				background-image: linear-gradient(to right, #FFF 0px, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, #FFF 100%), linear-gradient(to top, #FFF, rgba(255, 255, 255, 0));
+			}
+		}
+		&:first-child{
+			&:hover{
+				background-color: @gray-bg;
+			    background-image: linear-gradient(to right, #FFF 0px, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, #FFF 100%), linear-gradient(to bottom, #FFF, rgba(255, 255, 255, 0));
+			}
+		}
+	}
+}

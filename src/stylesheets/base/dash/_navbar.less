@@ -1,0 +1,39 @@
+// Navbar
+.navbar {
+	background: @gray-bg;
+	padding: 0px 0px 0px 10px;
+	border-radius: 0px;
+	.show-menu{
+		margin: 8px 15px 0px;
+	}
+	&.navbar-inverse .navbar-brand:hover, &.navbar-inverse .navbar-brand:focus {
+		color: lighten(@text-color, 10%);
+	}
+	.navbar-top-links{
+	  	li{
+	  		 display: inline-block;
+	  		a{
+	  			padding: 14px 15px;
+	  			color: lighten(@text-color, 10%);
+	  		}
+	  	}
+	}
+	.profiles {
+	  	margin-right: 0px !important;
+	    .profile-element {
+			img {
+			  	width: 32px;
+			  	margin-right: 10px;
+		  	}
+			a {
+				width:100%;
+				padding: 10px 10px 6px 10px !important;
+				display: inline-block;
+				color: @nav-links-gray;
+			}
+	      	li{
+	       	 	display: block;
+	      	}
+	    }
+  	}
+}
