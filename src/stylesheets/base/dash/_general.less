@@ -23,9 +23,14 @@ body {
     position: absolute;
     .wrapper-content {
 		padding: 20px 10px 100px;
-		.summary{
+		@media(min-width:1200px) {
+			.comp-s-item .box_category, .box_group {
+				position: fixed;
+			}
+		}
+		.summary {
 			padding: 15px 30px 25px;
-				h5{
+				h5 {
 					float: left;
 				}
 			.summary-group{
@@ -33,10 +38,10 @@ body {
 				margin: 5px 0px;
 				font-weight: 300;
 				float: left;
-				.summary-label{
+				.summary-label {
 					color: lighten(@text-color, 40%);
 				}
-				span{
+				span {
 					display: inline-block;
 				}
 			}
@@ -47,16 +52,17 @@ body {
 // BUTTONS 
 .btn {
 	font-size: 14px;
+	transition: all .3s ease 0s;
+	&.btn-default, &.btn-primary {
+	    background: transparent linear-gradient(to bottom, #FFF 0%, #F7F7F7 100%) repeat scroll 0% 0%;	
+	    border: 1px solid #E7EAEC;
+	    color: #676A6C;
+	    &:hover {
+	    	border: 1px solid #D2D2D2;
+	    }
+	}
 }
 
-.btn-default{
-    background: transparent linear-gradient(to bottom, #FFF 0%, #F7F7F7 100%) repeat scroll 0% 0%;	
-    border: 1px solid #E7EAEC;
-    color: #676A6C;
-    &:hover{
-    	border: 1px solid #D2D2D2;
-    }
-}
 
 // FORMS
 .form-control {
@@ -79,7 +85,7 @@ small {
 
 abbr[data-original-title], abbr[title] {
     cursor: help;
-    border-bottom: 1px dotted #777;
+    border-bottom: 0 none;
 }
 
 // BORDER
@@ -100,7 +106,7 @@ hr {
 	border-top: 1px solid @border-color;
 }
 
-// FORM
+// FORMS
 .form-group {
 	margin-bottom: 20px;
 }

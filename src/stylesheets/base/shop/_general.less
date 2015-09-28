@@ -19,12 +19,12 @@
 	}
 }
 
-.value_div{
-	table{
+.value_div {
+	table {
 		font-size: 12px;
-		tbody{
-			tr{
-				td{
+		tbody {
+			tr {
+				td {
 					padding: 5px 10px;
 				}
 			}
@@ -48,3 +48,23 @@
 	}
 }
 
+//PAYMENT ICONS
+.payment-option {
+    text-align: center;
+    &:hover i {
+        color: @inverse;
+        background-color: @text-color;
+    }
+    .payment-icon {
+        margin: 15px auto;
+        i {
+        width: 35%;
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid @text-color;
+            font-size: 30px;
+
+            transition: all 0.3s ease 0s;
+        }
+    }   
+}
