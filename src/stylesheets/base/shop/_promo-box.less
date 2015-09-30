@@ -20,11 +20,12 @@
             text-decoration: none;
             text-transform: uppercase;
             color: @inverse;
+            transition: all .3s ease 0s;
             &:hover {
         	    text-decoration: none;
-        	    color: @inverse;
+        	    color: darken(@dark-gray-bg, 10%);
         	    cursor: pointer;
-                background-color: darken(@dark-gray-bg, 10%);
+                background-color: @inverse;
             }
             &:focus {
         	    text-decoration: none;

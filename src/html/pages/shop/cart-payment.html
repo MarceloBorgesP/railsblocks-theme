@@ -18,27 +18,27 @@
 <section id='page_content'>
     <div class='wrap_content'>
         <!-- steps -->
-        <div class="container">
+        <div class="container clearfix">
             <ul class="menu_steps clearfix">
-                <li class="active">
+                <li>
                     <a class="step_icon fa fa-database" href="#"></a>
-                    <h5>Configurar Produto</h5>
+                    <h5>Configure Product</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-shopping-cart" href="#"></a>
-                    <h5>Revisar Compra</h5>
+                    <h5>Review Purchase</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-user" href="#"></a>
-                    <h5>Identificação</h5>
+                    <h5>Identification</h5>
                 </li>
-                <li>
+                <li class="active">
                     <a class="step_icon fa fa-money" href="#"></a>
-                    <h5>Efetuar Pagamento</h5>
+                    <h5>Payment</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-check" href="#"></a>
-                    <h5>Produto Liberado</h5>
+                    <h5>Product Released</h5>
                 </li>
             </ul>
         </div>
@@ -140,58 +140,58 @@
             </div>
             <div class='row'>
                 <div class='col-md-2'>
-                    <div class="payment-option">
-                        <div class="payment-icon">
-                            <i class="fa fa-credit-card"></i>
+                    <label class="payment-radio">
+                        <div class="payment-option">
+                            <div class="payment-icon">
+                                <i class="fa fa-credit-card"></i>
+                            </div>
+                                <input name="payment" type='radio' checked="checked">
+                                <span style='padding-left: 5px;'>Credit Card</span>
+                                </input>
                         </div>
-                        <label>
-                            <input data-toggle='radio' id='card' name='group1' type='radio' value='1'>
-                            <span style='padding-left: 5px;'>Credit Card</span>
-                            </input>
-                        </label>
-                    </div>
+                    </label>
                 </div>
                 <div class='col-md-2'>
-                    <div class="payment-option">
-                        <div class="payment-icon">
-                            <i class="fa fa-paypal"></i>
+                    <label class="payment-radio">
+                        <div class="payment-option">
+                            <div class="payment-icon">
+                                <i class="fa fa-paypal"></i>
+                            </div>
+                                <input name="payment" type='radio'>
+                                <span style='padding-left: 5px;'>Paypal</span>
+                                </input>
                         </div>
-                        <label>
-                            <input data-toggle='radio' id='paypal' name='group1' type='radio' value='2'>
-                            <span style='padding-left: 5px;'>Paypal</span>
-                            </input>
-                        </label>
-                    </div>
+                    </label>
                 </div>
                 <div class='col-md-2'>
-                    <div class="payment-option">
-                        <div class="payment-icon">
-                            <i class="fa fa-usd"></i>
+                    <label class="payment-radio">
+                        <div class="payment-option">
+                            <div class="payment-icon">
+                                <i class="fa fa-usd"></i>
+                            </div>
+                                <input name="payment" type='radio'>
+                                <span style='padding-left: 5px;'>PagSeguro</span>
+                                </input>
                         </div>
-                        <label>
-                            <input data-toggle='radio' id='pagseguro' name='group1' type='radio' value='3'>
-                            <span style='padding-left: 5px;'>PagSeguro</span>
-                            </input>
-                        </label>
-                    </div>
+                    </label>
                 </div>
                 <div class='col-md-2'>
-                    <div class="payment-option">
-                        <div class="payment-icon">
-                            <i class="fa fa-money"></i>
+                    <label class="payment-radio">
+                        <div class="payment-option">
+                            <div class="payment-icon">
+                                <i class="fa fa-money"></i>
+                            </div>
+                                <input name="payment" type='radio'>
+                                <span style='padding-left: 5px;'>Boleto</span>
+                                </input>
                         </div>
-                        <label>
-                            <input checked='' data-toggle='radio' id='billet' name='group1' type='radio' value='4'>
-                            <span style='padding-left: 5px;'>Boleto</span>
-                            </input>
-                        </label>
-                    </div>
+                    </label>
                 </div>
                 <div class='clearfix'></div>
             </div>
             <div class='row mt_40'>
                 <div class='col-md-2'>
-                    <a class='btn btn-primary' href='#' id='change_date'>Confirmar</a>
+                    <a class='btn btn-primary' href='#'>Confirmar</a>
                 </div>
             </div>
         </div>

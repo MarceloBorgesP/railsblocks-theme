@@ -10,7 +10,7 @@
                 <a>Accounts</a>
             </li>
             <li class='active'>
-                <strong>Clients</strong>
+                <strong>Resellers</strong>
             </li>
         </ol>
     </div>
@@ -20,34 +20,21 @@
 <div class='wrapper wrapper-content'>
     <div class='row'>
         <div class='col-lg-8'>
-            <h4>New Client</h4>
-            <form novalidate="novalidate" class="simple_form form-horizontal" id="" action="" method="post">
-                <div class="col-md-3 col-md-offset-4">
-                    <label class="radio">
-                        <input type="radio" value="cpf" name="group_org" class="custom-radio">
-                        <span style="padding-left: 5px;">Pessoa Física</span>
-                    </label>
-                </div>
-                <div class="col-md-3">
-                    <label class="radio">
-                        <input type="radio" value="cnpj" name="group_org" class="custom-radio"
-                      >
-                        <span style="padding-left: 5px;">Pessoa Jurídica</span>
-                    </label>
-              </div>
+            <h4>New Reseller</h4>
+            <form class="simple_form form-horizontal">
                 <div class="col-md-12">
                     <h5>Personal Information</h5>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label class="control-label">Razao Social</label>
+                            <label class="control-label">Corporate name</label>
                             <input class="form-control" type="text" placeholder="Foo Inc." />
                         </div>
                         <div class="col-md-8">
-                            <label class="control-label">Nome Fantasia</label>
+                            <label class="control-label">Trade name</label>
                             <input class="form-control" type="text" placeholder="Foo Inc." />
                         </div>
                         <div class="col-md-4">
-                            <label class="control-label">CNPJ</label>
+                            <label class="control-label">Document</label>
                             <input class="form-control" type="text" placeholder="xx.xxx.xxx/xxxx-xx" />
                         </div>
                     </div>
@@ -84,7 +71,7 @@
                             <input class="form-control" type="text" placeholder="City" />
                         </div>
                         <div class="col-md-4">
-                            <select id="organization_country" name="organization[country]" class="form-control">
+                            <select class="form-control">
                                 <option>Country</option>
                                 <option value="BR">Brasil</option>
                                 <option value="CH">Chile</option>
@@ -105,7 +92,7 @@
             <br>
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
-                    <span>Name</span>
+                    <span>Corporate Name</span>
                 </div>
                 <div class="col-md-7">
                     <span>Loremipsum</span>
@@ -114,7 +101,7 @@
 
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
-                    <span>Nickname</span>   
+                    <span>Trade name</span>   
                 </div>
                 <div class="col-md-7">
                     <span>Loremipsum</span> 
@@ -123,7 +110,7 @@
 
             <div class="summary-group clearfix">
                 <div class="summary-label col-md-5">
-                    <span>CNPJ</span>   
+                    <span>Document</span>   
                 </div>
                 <div class="col-md-7">
                     <span>Loremipsum</span> 

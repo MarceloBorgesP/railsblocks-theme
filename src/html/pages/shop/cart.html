@@ -1,13 +1,13 @@
 {% extends 'layouts/shop.html' %} {% block content %}
 <section class="page_title page_title_mini">
     <div class="container clearfix">
-        <h2>Carrinho de Compras</h2>
+        <h2>Shopping Cart</h2>
         <ol class="breadcrumb">
             <li>
-                <a href="#">Página Inicial</a>
+                <a href="#">Home</a>
             </li>
-            <li>
-                Carrinho de Compras
+            <li class="active">
+                Shopping Cart
             </li>
         </ol>
     </div>
@@ -18,23 +18,23 @@
             <ul class="menu_steps clearfix">
                 <li>
                     <a class="step_icon fa fa-database" href="#"></a>
-                    <h5>Configurar Produto</h5>
+                    <h5>Configure Product</h5>
                 </li>
                 <li class="active">
                     <a class="step_icon fa fa-shopping-cart" href="#"></a>
-                    <h5>Revisar Compra</h5>
+                    <h5>Review Purchase</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-user" href="#"></a>
-                    <h5>Identificação</h5>
+                    <h5>Identification</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-money" href="#"></a>
-                    <h5>Efetuar Pagamento</h5>
+                    <h5>Payment</h5>
                 </li>
                 <li>
                     <a class="step_icon fa fa-check" href="#"></a>
-                    <h5>Produto Liberado</h5>
+                    <h5>Product Released</h5>
                 </li>
             </ul>
         </div>
@@ -45,16 +45,16 @@
                         <tr>
                             <th></th>
                             <th></th>
-                            <th>Produto</th>
-                            <th class="text-center">Preço Unitário</th>
-                            <th class="text-center">Quantidade</th>
+                            <th>Product</th>
+                            <th class="text-center">Unit Price</th>
+                            <th class="text-center">Quantity</th>
                             <th class="text-center">Total</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <a title="Remove this item" href="#" class="">
+                                <a title="Remove this item" href="#">
                                     <i class="fa fa-trash-o"></i>
                                 </a>
                             </td>
@@ -62,7 +62,7 @@
                                 <i style="font-size:40px;" class="fa fa-cloud"></i>
                             </td>
                             <td class="name_item_cart">
-                                <a href="#">
+                                <a href="plans-customize.html">
                                   Cloud Server (Custom Plan)
                                 </a>
                             </td>
@@ -74,7 +74,7 @@
                             <td class="text-center">
                                 <div class="quantity_item_cart clearfix">
                                     <input type="button" value="-" class="less">
-                                    <input type="text" value="1" disabled="" class="qty_item">
+                                    <input type="text" value="1" disabled="disabled" class="qty_item">
                                     <input type="button" value="+" class="add">
                                 </div>
                             </td>
@@ -89,18 +89,18 @@
                                 <div class="row clearfix">
                                     <div class="col-md-7 col-xs-4">
                                         <div class="col-md-3">
-                                            <span>Possui um cupom?</span>
+                                            <span>Entry cupom code</span>
                                         </div>
                                         <div class="col-md-4 col-xs-7">
                                             <input type="text" class="form-control">
                                         </div>
                                         <div class="col-md-4 col-xs-5">
-                                            <a href="#" class="btn btn-default">Aplicar Cupom</a>
+                                            <a href="#" class="btn btn-default">Apply Cupom</a>
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-xs-8">
-                                        <a href="#" class="btn btn-success pull-right">Finalizar Compra</a>
-                                        <a href="#" class="btn btn-primary pull-right mr_20">Continuar Comprando</a>
+                                        <a href="cart-login.html" class="btn btn-success pull-right">Finish Purchase</a>
+                                        <a href="categories.html" class="btn btn-primary pull-right mr_20">Continue Purchase</a>
                                     </div>
                                 </div>
                             </td>
@@ -113,12 +113,12 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-6 clearfix">
                     <div class="table-responsive">
-                        <h4>Total no Carrinho</h4>
+                        <h4>Cart Total</h4>
                         <table class="table table_cart">
                             <tbody>
                                 <tr>
                                     <td>
-                                        <strong>Subtotal no Carrinho</strong>
+                                        <strong>Cart Subtotal</strong>
                                     </td>
                                     <td>
                                         <span>
