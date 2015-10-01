@@ -1,16 +1,17 @@
 {% extends 'layouts/shop.html' %} {% block content %}
 <section class="page_title page_title_mini">
     <div class="container clearfix">
-        <h2>Servidores Dedicados</h2>
-        <span>As melhores soluções de Cloud do mercado.</span>
+        <h2>Payment</h2>
         <ol class="breadcrumb">
             <li>
-                <a>Página Inicial</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a>Produtos e Serviços</a>
+                <a href="cart.html">Shopping Cart</a>
             </li>
-            <li class="active">Servidores Dedicados</li>
+            <li class="active">
+                Payment
+            </li>
         </ol>
     </div>
 </section>
@@ -47,16 +48,16 @@
             <table class='table cart'>
                 <thead>
                     <tr>
-                        <th>Produto</th>
-                        <th>Preço Unit.</th>
-                        <th>Quantidade</th>
+                        <th>Product</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
                         <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <a href='#'>Plano Small CS</a>
+                            <a href='#'>Small CS Plan</a>
                         </td>
                         <td>
                             <span>$100.00</span>
@@ -88,7 +89,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Valor Total Servidor</strong>
+                                    <strong>Server's Total Value</strong>
                                 </td>
                                 <td>
                                     <span>$200.00</span>
@@ -96,7 +97,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>TaxasFeature/shopping cart</strong>
+                                    <strong>Taxes</strong>
                                 </td>
                                 <td>
                                     <span>$0.00</span>
@@ -104,7 +105,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>Total a Pagar</strong>
+                                    <strong>Total</strong>
                                 </td>
                                 <td>
                                     <span>$250.00</span>
@@ -112,7 +113,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>Cambio US$-R$</strong>
+                                    <strong>Exchange US$-R$</strong>
                                 </td>
                                 <td>
                                     <span>$40.0</span>
@@ -120,7 +121,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>Total Real</strong>
+                                    <strong>Actual Total</strong>
                                 </td>
                                 <td>
                                     <span>
@@ -136,7 +137,7 @@
         <hr>
         <div class='container pt_20'>
             <div class='row'>
-                <label>Forma de Pagamento</label>
+                <label>Payment Type</label>
             </div>
             <div class='row'>
                 <div class='col-md-2'>
@@ -182,7 +183,7 @@
                                 <i class="fa fa-money"></i>
                             </div>
                                 <input name="payment" type='radio'>
-                                <span style='padding-left: 5px;'>Boleto</span>
+                                <span style='padding-left: 5px;'>Billet</span>
                                 </input>
                         </div>
                     </label>
@@ -191,7 +192,7 @@
             </div>
             <div class='row mt_40'>
                 <div class='col-md-2'>
-                    <a class='btn btn-primary' href='#'>Confirmar</a>
+                    <a class='btn btn-primary' href='#'>Confirm</a>
                 </div>
             </div>
         </div>

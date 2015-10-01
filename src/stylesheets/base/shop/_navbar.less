@@ -30,6 +30,27 @@
 						color: @gray-bg;
 					}
 				}
+				&.dropdown {
+				    a:active + ul, a:focus + ul {
+				    	display: block !important;
+				    }
+					ul {
+						background: white;
+					    list-style: outside none none;
+					    margin: 30px 0 0;
+					    padding: 0;
+					    position: absolute;
+					    top: 33px;
+					    z-index: 2147483647;
+					    li {
+					    	padding: 5px 0;
+					    	a {
+					    		font-size: 12px;
+					    		font-weight: 300
+					    	}
+					    }
+					}	
+				}
 			}
 		}
 	}
