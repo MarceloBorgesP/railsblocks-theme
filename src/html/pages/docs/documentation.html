@@ -4,9 +4,7 @@
   Docs: https://mozilla.github.io/nunjucks/api.html
 #}
 
-{% extends 'layouts/documentation.html' %}
-
-{% block content %}
+{% extends 'layouts/documentation.html' %} {% block content %}
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -254,7 +252,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </footer>
         </div>
     </div>
-{% endblock %}
-
-{% block javascript %}
-{% endblock %}
+    
+{% endblock %} {% block javascript %} {% endblock %}
