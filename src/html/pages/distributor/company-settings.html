@@ -1,0 +1,147 @@
+{% extends 'layouts/admin.html' %} {% block content %}
+<div class="row wrapper">
+  <div class="col-lg-12">
+    <h3>Company</h3>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#"> Home </a>      
+      </li>
+      <li>
+        <a href="#"> Companies </a>      
+      </li>
+      <li class="active">
+        <strong>Company</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="row wrapper backs">
+  <div class="col-lg-3 go-back">
+    <a href="#">      
+      <i class="fa fa-angle-left"></i>
+      <span>Companies</span>
+    </a>  
+  </div>
+  <div class="col-lg-5 title">
+    <span>Foo Inc.</span>
+  </div>
+  <div class="col-lg-4">
+    <div class="pull-right">
+      <a class="btn btn-default"><i class="fa fa-floppy-o"></i> Save</a>
+      <a class="btn btn-danger">
+        <i class="fa fa-times"></i>
+        Delete Company
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row wrapper backs-nav">
+  <div class="col-lg-10 col-lg-offset-1 comp-nav">
+    <div class="comp-nav-item">
+      <a href="#">        
+        <i class="fa fa-info"></i>
+        <span>Information</span>
+      </a>    
+    </div>
+    <div class="comp-nav-item">
+      <a href="#">        
+        <i class="fa fa-puzzle-piece"></i>
+        <span>Providers</span>
+      </a>    
+    </div>
+  </div>
+</div>
+<!-- CONTENT -->
+<div class="wrapper wrapper-content fix-padding-mini-dashs">
+  <div class="row">
+    <div id="info" class="comp-s-item border-bottom clearfix">
+      <div class="col-lg-4">
+        <h4>Company Information</h4>
+        <small>All the information about the company will be displayed on this page.</small>
+      </div>
+      <div class="col-lg-8 summary">
+        <div class="summary-group clearfix">
+          <div class="summary-label col-sm-3">
+            <span>Name</span>
+          </div>
+          <div class="col-sm-6">
+              <span>Foo Inc.</span>
+          </div>
+          <div class="col-sm-3">
+              <button class="btn btn-default">Edit Name</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comp-s-item border-bottom clearfix">
+      <div class="col-lg-4">
+        <h4>Manage Theme</h4>
+        <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <a href="#">Aenean ac magna ipsum.</a>
+        </small>
+      </div>
+      <div class="col-lg-8 summary">
+        <div class="clearfix">
+          <div class="col-sm-3">
+            <span>Current Theme:</span>
+          </div>
+          <div class="col-sm-7 theme">
+            <span>Base</span>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">New Theme:</label>
+          <div class="col-sm-4">
+            <select class="form-control">
+              <option value="theme_1"> theme_1 </option>
+              <option value="theme_2"> theme_2 </option>
+              <option value="theme_3"> theme_3 </option>
+              <option value="theme_4"> theme_4 </option>
+              <option value="theme_5"> theme_5 </option>
+              <option value="theme_6"> theme_6 </option>
+              <option value="theme_7"> theme_7 </option>
+              <option value="theme_8"> theme_8 </option>
+              <option value="theme_9"> theme_9 </option>
+              <option value="theme_10"> theme_10 </option>
+            </select>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comp-s-item border-bottom clearfix">
+      <div class="col-lg-4">
+        <h4>Domains</h4>
+        <small>Consectetur adipiscing. Lorem ipsum dolor sit amet elit. 
+          <a href="#">Aenean ac magna.</a>
+        </small>
+      </div>
+      <div class="col-lg-8 summary">
+        <h5>Custom Domains</h5>
+        <div class="pull-right">
+          <button class="btn btn-default">Edit Domain</button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Domain name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>mydomain.manager.io</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <br>
+    <div class="col-md-4">
+      <button class="btn btn-primary">Save Options</button>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block javascript %} {% endblock %}
