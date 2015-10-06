@@ -9,8 +9,9 @@ var init = function () {
 	$('.show-menu').click(function() {
 		$('#wrapper').toggleClass('toggled');
 	});
+
+	//ACTIVATE TOOLTIPS
+	$('[data-toggle="tooltip"]').tooltip(); 
 }
 
 $(document).ready(init);
-
-//$.getScript("your-javascript.js")
