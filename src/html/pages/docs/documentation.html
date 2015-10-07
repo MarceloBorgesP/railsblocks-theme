@@ -47,13 +47,11 @@
         <ul>
             <li><a href="#documentation">About Documentation</a></li>
             <li><a href="#folder_structure">Folder Structure</a></li>
-            <li><a href="#admin_layout_structure">Administrator Dashboard Layout</a></li>
-            <li><a href="#store_layout_structure">Store Layout</a></li>
+            <li><a href="#admin_theme_structure">Administrator Dashboard Layout</a></li>
+            <li><a href="#store_theme_structure">Store Layout</a></li>
             <li><a href="#less_structure">LESS Structure</a></li>
             <li><a href="#html_structure">HTML Structure</a></li>
-
         </ul>
-
     </div>
 
 </div>
@@ -61,22 +59,46 @@
 <div class="row">
     <div class="col-md-12">
     <a name="documentation" class="anchor"></a>
-    <h3>About the template</h3>
+    <h2>About the template</h2>
 
     <p>The Railsblocks Theme template is divided in two main parts: The <strong>Admin Dashboard</strong> that contains all components for the distributor and reseller dashboards, and the <strong>Store</strong> that contains all components for the shopping process.</p>
 
-    <p>All the pages of the system are listed under the <strong>src/html/</strong> directory, and you can check how all pages from our system look with the Railsblocks Theme.</p>
+    <p>All html pages are listed under the <strong>src/html/</strong> directory, and you can check how all of them look with the Railsblocks Theme.</p>
 
-    <p>The stylesheets responsible for stylling these pages are found under the <strong>src/stylesheets/</strong> directory, and you can make any modifications you want in there.</p>
+    <p>All the stylesheets responsible for stylling these pages are found under the <strong>src/stylesheets/</strong> directory.</p>
 
+    <div class="info-box">
+        <h4>Customizations</h4>
+        <p>In case you want to make any customizations, we suggest creating separate files for it, since new versions of the theme are going to be released in the future. This makes easier for you to use the same custom file in other versions.</p>
+
+        <p>You can create a custom file for example:</p>
+        <div>
+            <pre class="prettyprint linenums">
+<code><strong>stylesheets/</strong>
+    ├── <strong>base/</strong>
+        ├──<strong>dash/</strong>
+        ├──<strong>others/</strong>
+        ├──<strong>shop/</strong> 
+    ├── theme.less
+    ├── custom.less     
+</code>
+            </pre>
+        </div>
+
+        <p>And then import it on <strong>theme.less</strong>:</p>
+        <pre>@import "custom.less";</pre>
+
+    </div>
+    <p><small></small></p>    
+    <hr>
     <div class="row">
         <a name="folder_structure" class="anchor"></a>
         <div class="col-md-12">
-            <h3>Structure</h3>
-            <h4>Folders and files</h4>
+            <h2>Structure</h2>
+            <h3>Folders and files</h3>
         <div>
             <pre class="prettyprint linenums">
-<code>railsblocks_theme/
+<code class="text-muted"><strong>railsblocks_theme/</strong>
     ├── <strong>fonts/</strong>
     ├── <strong>html/</strong>
         ├── <strong>layouts/</strong>
@@ -115,8 +137,9 @@
         </div>
 
     </div>
-    <hr>
     <div class="col-md-12">
+    <hr>
+    <a name="admin_theme_structure" class="anchor"></a>
         <h2>Admin Dashboard Theme</h2>
         <div class="col-md-6">
             <h3>Main HTML elements</h3>
@@ -134,9 +157,9 @@
             <br>
         </div>
         <div class="col-md-6">
-            <a target="_blank" href="/images/layouts.jpg"><img class="img-responsive" src="/images/layouts.jpg" alt="page structure"></a>
+            <a target="_blank" href="/images/layout-admin.jpg"><img class="img-responsive" src="/images/layout-admin.jpg" alt="Admin Dashboard Structure"></a>
         </div>
-        <a name="admin_layout_structure" class="anchor"></a>
+        <hr>
         <div class="col-md-12">
             <section>
                 <h3>Layout structure</h3>
@@ -149,26 +172,27 @@
                     <li>Fixed footer</li>
                 </ul>
                 <div class="col-md-6">
-                    <h4>Fixed left sidebar</h4>
+                    <h3>Fixed left sidebar</h3>
                     <p>The left sidebar contains the main menu. This main menu has all the main links to the other internal system pages.</p>
 
-                    <h4>Top navbar</h4>
+                    <h3>Top navbar</h3>
                     <p>The top navbar contains some user interaction elements such as: messages, notifications and also a profile menu.</p>
                 </div>
                 <div class="col-md-6">
-                    <h4>Page title and breadcrumb</h4>
+                    <h3>Page title and breadcrumb</h3>
                     <p>Contains only the page title and the page breadcrumbs.</p>
-                    <h4>Main content</h4>
+                    <h3>Main content</h3>
                     <p>The main part of the layout, the system pages will be loaded in this section. </p>
 
-                    <h4>Fixed footer</h4>
+                    <h3>Fixed footer</h3>
                     <p>The footer is always sticky to the bottom of the page. In the footer, there are a tiny menu containing links such as "Help", "Feedback" and "Contact".</p>   
                 </div>
             </section>
         </div>
     </div>
-    <hr>
     <div class="col-md-12">
+    <hr>
+        <a name="store_theme_structure" class="anchor"></a>
         <h2>Store Theme</h2>
         <div class="col-md-6">
             <h3>Main HTML elements</h3>
@@ -186,9 +210,8 @@
             <br>
         </div>
         <div class="col-md-6">
-            <a target="_blank" href="/images/layouts.jpg"><img class="img-responsive" src="/images/layouts.jpg" alt="page tructure"></a>
+            <a target="_blank" href="/images/layout-store.jpg"><img class="img-responsive" src="/images/layout-store.jpg" alt="Store Structure"></a>
         </div>
-        <a name="store_layout_structure" class="anchor"></a>
         <div class="col-md-12">
             <section>
                 <h3>Layout structure</h3>
@@ -200,17 +223,17 @@
                     <li>Fixed footer</li>
                 </ul>
                 <div class="col-md-6">
-                    <h4>Header</h4>
+                    <h3>Header</h3>
                     <p>The header contains the main menu. Here we can find the main links for navigation on the system.</p>
 
-                    <h4>Page title and breadcrumb</h4>
+                    <h3>Page title and breadcrumb</h3>
                     <p>Contains the page title, sometimes with a brief description, and the page breadcrumbs.</p>
                 </div>
                 <div class="col-md-6">
-                    <h4>Main content</h4>
+                    <h3>Main content</h3>
                     <p>The main part of the layout, the content will be loaded in this section. </p>
 
-                    <h4>Footer</h4>
+                    <h3>Footer</h3>
                     <p>The footer is at the bottom of the page. In the footer, there are many useful links, such as links for navigation and social media.</p>   
                 </div>
             </section>
@@ -222,7 +245,7 @@
         <a name="less_structure" class="anchor"></a>
             <hr>
             <section>
-                <h3>LESS Structure</h3>
+                <h2>LESS Structure</h2>
                 <p>The css structure should be always well organized in order to keep a clearly understanding of its elements, classes and also files.</p>
 
                 <p>All the LESS files are in the stylesheets directory and they are compiled into only one css file (public/stylesheets/global.css).</p>
@@ -240,23 +263,23 @@
     ├── theme.less
 </code>
                 </pre>
-                <h4>_helpers.less</h4>
-                <p>Contains stylings that help all theme. </p>
+                <h3>_helpers.less</h3>
+                <p>Contains styllings that help all theme. </p>
 
-                <h4>_mixins.less</h4>
+                <h3>_mixins.less</h3>
                 <p>This file contains all the stylesheets mixins the are used in other less files.</p>
 
 
-                <h4>_variables.less</h4>
+                <h3>_variables.less</h3>
                 <p>This file contains all the coloring styles and other variables useful to be used in the other less files.</p>
 
-                <h4>shop/ & dash/</h4>
+                <h3>shop/ & dash/</h3>
                 <p>These directories contain all stylesheets responsible for the Store and Admin respectively. In order to maintain the organization we decided to break the theme in smallers files and different folders. Despite our theme is considerably big, it's very easy to find what you are looking for. </p>
             </section>
             <a name="html_structure" class="anchor"></a>
             <hr>
             <section>
-                <h3>HTML Structure</h3>
+                <h2>HTML Structure</h2>
                 <p>As well as the stylesheets, the HTML strucuture should be always well organized in order to keep a clearly understanding of its structure.</p>
 
                 <p>The file sctructure of the HTML files is:</p>
@@ -281,36 +304,30 @@
         ├── <strong>docs/</strong>
 </code>
                 </pre>
-                <h4>layouts/</h4>
+                <h3>layouts/</h3>
                 <p>Contains all layouts of the theme</p>
 
-                <h4>parts/</h4>
+                <h3>parts/</h3>
                 <p>Contains pieces of HTML which are common to other pages, such as headers and footers.</p>
 
-                <h4>pages/</h4>
+                <h3>pages/</h3>
                 <p>Contains all the pages of the theme, and is subdivided in: </p>
-                <ul>
+                <ul class="list-unstyled ml_40 mt_20">
                     <li>
-                    <h4>distributor/</h4> 
-                    <p>Keeps all pages that the distributor finds on his dashboard.</p>
+                        <h4>distributor/</h4> 
+                        <p>Keeps all pages that the distributor finds on his dashboard.</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
-                    <h4>reseller/</h4> 
-                    <p>Keeps all pages that the reseller finds on his dashboard.</p>
+                        <h4>reseller/</h4> 
+                        <p>Keeps all pages that the reseller finds on his dashboard.</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
-                    <h4>shop/</h4> 
-                    <p>Keeps all pages that are found on the store.</p>
+                        <h4>shop/</h4> 
+                        <p>Keeps all pages that are found on the store.</p>
                     </li>
-                </ul>
-                <ul>
                     <li>
-                    <h4>docs/</h4> 
-                    <p>Keeps all the documentation.</p>
+                        <h4>docs/</h4> 
+                        <p>Keeps all the documentation.</p>
                     </li>
                 </ul>
             </section>
