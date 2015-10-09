@@ -46,11 +46,13 @@
       <form id="new_organization">
         <div class="row mt_20">
             <div class="container">
-              <div class="col-md-3 col-md-offset-4">
-                <label class="radio">
-                  <input type="radio" value="person" name="group_org" class="custom-radio">
-                  <span style="padding-left: 5px;">Person</span>
-                </label>
+                <div class="col-md-3 col-md-offset-4">
+                    <label class="radio">
+                        <a class="tips" href="#" data-toggle="tooltip" title="On the system, you can choose a person instead of a coorporation, and you'll be given other fiedls such as name and nickname">
+                          <input type="radio" value="person" name="group_org" class="custom-radio">
+                          <span style="padding-left: 5px;">Person</span>
+                        </a>
+                    </label>
               </div>
               <div class="col-md-3">
                 <label class="radio">
@@ -121,7 +123,11 @@
                 </div>
             <div class="col-md-12 mt_20">
             <div class="col-md-3">
-              <input type="submit" class="btn btn btn-primary" value="Create Organization">
+              <!-- THE SYSTEM ACTUALLY WORKS WITH THIS INPUT
+              <input type="submit" class="btn btn btn-primary" value="Create Organization">-->
+
+              <!-- THIS LINK IS JUSTO TO HELP NAVIGATION -->
+              <a href="cart-login.html" class="btn btn-primary">Create Organization</a>
             </div>
             </div>
           </div>
